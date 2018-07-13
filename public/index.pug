@@ -1,0 +1,21 @@
+// INDEX HTML
+script(src='https://code.jquery.com/jquery-3.3.1.min.js' integrity='sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=' crossorigin='anonymous')
+script(type='text/javascript').
+	var add_button;
+	var remove_button;
+	$(document).ready(()=> {
+		add_button = $('#add_button');
+		remove_button = $('#remove_button');
+		id = '?id=' + !{id} + '&add=true'
+		
+		add_button.attr('href', '/inventory'+id);
+		
+		id = '?id=' + !{id} + '&add=falseid = '?id=' + !{id} + '&add=true''
+		remove_button.attr('href', '/inventory'+id);
+	});
+
+	  
+a#add_button
+  button Add
+a#remove_button
+  button Remove

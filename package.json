@@ -1,0 +1,15 @@
+{
+  "name": "inventory_server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "start_server.js",
+  "scripts": {
+    "test": "node start_server.js"
+  },
+  "author": "Demetry Romanowski",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.16.3",
+    "pug": "^2.0.3"
+  }
+}
