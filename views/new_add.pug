@@ -1,0 +1,68 @@
+// INDEX HTML
+script(src='https://code.jquery.com/jquery-3.3.1.min.js' integrity='sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=' crossorigin='anonymous')
+script(type='text/javascript').
+	var add_button;
+	var clear_button;
+	$(document).ready(()=> {
+
+		var _id = !{id}; 
+
+		if(_id != undefined)
+		{
+			var qr_input = $('#qr')
+
+			qr_input.prop("disabled", true); 
+			qr_input.val(_id); 
+		}
+		else
+		{
+			qr_input.prop("disabled", false);
+		}
+
+
+		add_button = $('#add_button'); 
+		clear_button = $('#clear_button');
+
+		add_button.click(() => {
+			//DO Something
+		}); 
+
+		clear_button.click(() => { 
+			$('input').val('');
+		});
+		//- add_button = $('#add_button');
+		//- remove_button = $('#clear_button');
+		//- _id = '?id=' + _id + '&add=true';
+		
+		//- add_button.attr('href', '/inventory'+_id);
+		
+		//- _id = '?id=' + _id + '&add=false';
+		//- remove_button.attr('href', '/inventory'+_id);
+	});
+
+| QRcode
+input#qr
+br
+| Part Number
+input#pn 
+br
+| Description
+input#desc 
+br
+| Min
+input#min
+br
+| Max 
+input#max
+br
+| Manufacturer UPC
+input#manupc 
+br
+| Current Amount
+input#curramnt
+br
+
+a#add_button
+	button Add
+a#clear_button
+	button Clear

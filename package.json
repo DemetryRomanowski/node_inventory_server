@@ -4,12 +4,14 @@
   "description": "",
   "main": "start_server.js",
   "scripts": {
-    "test": "node start_server.js"
+    "test": "node start_server.js",
+    "watch": "nodemon start_server -e js,pug"
   },
   "author": "Demetry Romanowski",
   "license": "MIT",
   "dependencies": {
     "express": "^4.16.3",
+    "nodemon": "^1.18.2",
     "pug": "^2.0.3"
   }
 }
