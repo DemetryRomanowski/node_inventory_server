@@ -278,6 +278,7 @@ app.get('*', (req, res, next) => {
 /**
  * Start the webserver
  */
-app.listen(3000, ()=> { 
-	Debug.log(ErrorLevel.INFO, 'Server started on port: 3000')
+app.listen(process.env.port, () => {
+	
+	Debug.log(ErrorLevel.INFO, 'Server started on port: ' + process.env.port);
 });
