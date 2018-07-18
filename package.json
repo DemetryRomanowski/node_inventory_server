@@ -5,7 +5,8 @@
   "main": "start_server.js",
   "scripts": {
     "test": "node start_server.js",
-    "watch": "nodemon start_server -e js,pug"
+    "watch": "nodemon start_server -e js,pug",
+    "start": "node start_server.js"
   },
   "author": "Demetry Romanowski",
   "license": "MIT",

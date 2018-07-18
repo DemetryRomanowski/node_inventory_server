@@ -10,11 +10,58 @@ var app = express();
 
 app.set('view engine', 'pug')
 
+var ErrorLevel = { 
+	DEBUG : "DEBUG: ", 
+	INFO : "INFO: ", 
+	WARN : "WARNING: ", 
+	ERR : "ERROR: "
+};
+
+var Debug = {
+	log : function(err_level, string) { 
+		/**
+		 * TODO(Demetry): Eventually add a log file writer
+		 */
+		if(err_level == undefined) 
+			throw "ERROR LEVEL IS UNDEFINED";
+	
+		console.log(new Date(Date.now()).toLocaleString() + " : " + err_level + string);
+	}
+};
+
 /**
  * Current Inventory object
  */
 var inventory_object = {
-	
+
+	/**
+	 * Set the inventory object
+	 * @param {Number} upc The ID
+	 * @param {Number} pn The part number
+	 * @param {String} desc The description
+	 * @param {Number} min The minimum amount allowed in the inventory
+	 * @param {Number} max The maximum amount allowed in the inventory
+	 * @param {Number} manupc The manufacturer UPC
+	 * @param {Number} curramnt The current QTY in the inventory
+	 */
+	set : function(
+			upc, 
+			pn, 
+			desc, 
+			min, 
+			max, 
+			manupc, 
+			curramnt
+	){ 
+		this.upc = upc; 
+		this.part_number = pn; 
+		this.description = desc; 
+		this.min = min; 
+		this.max = max; 
+		this.manufacterer_upc = manupc; 
+		this.current_amount = curramnt;
+	},
+	line : 0, 
 	upc : 0, 
 	part_number : 0,  
 	description : "", 
@@ -26,33 +73,54 @@ var inventory_object = {
 
 /**
  * Add qty to inventory
+ * TODO(Demetry): Fix this
  * @param {Number} id 
  * @param {Number} amnt 
  */
 function add_to_inventory(id, amnt){ 
-	console.log("ADDED: " + id); 
+	Debug.log(ErrorLevel.INFO, "ADDED: " + id); 
+
+	inventory_object.current_amount += amnt; 
 }
 
 /**
  * Remove qty from inventory
+ * TODO(Demetry): Fix this
  * @param {Number} id 
  * @param {Number} amnt 
  */
 function remove_from_inventory(id, amnt){
-	console.log("REMOVED: " + id); 
+	Debug.log(ErrorLevel.INFO, "REMOVED: " + id); 
+
+	inventory_object.current_amount -= amnt;
 } 
 
 /**
  * Load the data from the database
- * @param {function} callback 
+ * @param {Function} callback The callback that gets called once data is finished reading
  */
 function load_data(callback)
 {
 	fs.readFile("inventory_db.csv", 'utf8', (err, raw_data) => { 
 		if(err)
-			console.log(err.message); 
+			Debug.log(ErrorLevel.ERR, err.message); 
 
 		callback(raw_data); 
+	});
+}
+
+/**
+ * 
+ * @param {String} data The data to write to the file 
+ * @param {Function} callback The callback that gets called once data is finished writing 
+ */
+function write_data(data, callback)
+{
+	fs.writeFile("inventory_db.csv", data, (err) => {
+		if(err)
+			Debug.log(ErrorLevel.ERR, err.message); 
+
+		callback(); 
 	});
 }
 
@@ -75,6 +143,7 @@ function load_check_id_exists(id, callback) {
 			{
 				callback(true, 
 				{
+					line : i, 
 					upc : words[0], 
 					part_number : words[1],  
 					description : words[2], 
@@ -91,12 +160,63 @@ function load_check_id_exists(id, callback) {
 }
 
 /**
+ * Add a new item to the inventory
+ * TODO(Demetry): Fix this shit
+ * 
+ * @param {Object} inventory_object The inventory object 
+ * @param {Function} callback The callback once this is finished 
+ */
+function add_new_item(inventory_object, callback)
+{
+	load_check_id_exists(inventory_object.id, (loaded_object, exists)=> { 
+		if(!exists) return; 
+		var inventory_object_string;
+
+		var line = loaded_object.line; 
+
+		
+
+		write_data(inventory_object_string, () => { 
+			callback(); 
+		});
+	});
+}
+
+/**
+ * Handle the addnew request
+ */
+app.get('/addnew', (req, res, next) => { 
+	var query = req.query;
+
+	if( !query.id || 
+		!query.pn || 
+		!query.desc || 
+		!query.min || 
+		!query.max || 
+		!query.manupc || 
+		!query.curramnt)
+	{ 
+		res.send("ERROR QUERY INCORRECTLY FORMATTED");
+		Debug.log(Debug.ERR, "QUERY INCORRECTLY FORMATTED"); 
+	}
+
+	inventory_object.set(query.id, query.pn, query.desc, query.min, query.max, query.manupc, query.curramnt);
+	
+	add_new_item(inventory_object, () => { 
+		res.render('index', {id: id_});
+	}); 
+});
+
+/**
  * When the user requests to add or remove 
  * an item from the inventory
  */
 app.get('/inventory', (req, res, next) => { 
 	if(!req.query.id || !req.query.add)
+	{
 		res.send("ERROR QUERY INCORRECTLY FORMATTED");
+		Debug.log(Debug.ERR, "QUERY INCORRECTLY FORMATTED");
+	}
 
 	var id_ = req.query.id; 
 	var add_ = req.query.add; 
@@ -115,11 +235,15 @@ app.get('/inventory', (req, res, next) => {
 
 /**
  * When the user requests to read a item from the inventory
+ * (SCANS A QR CODE)
  */
 app.get('/read', (req, res, next) => { 
 	if(!req.query.id)
-		res.send("ERROR"); 
-	
+	{
+		Debug.log(ErrorLevel.ERROR, "USER: REQUESTED TO READ WITH NO ID"); 
+		res.send("ERROR NO ID SENT TO READ"); 
+	}
+
 	var id_ = req.query.id;
 
 	inventory_object = null;
@@ -127,7 +251,7 @@ app.get('/read', (req, res, next) => {
 	load_check_id_exists(id_, (exists, loaded_inventory) => { 
 		if(exists == true)
 		{ 
-			console.log(new Date(Date.now()).toLocaleString() + ":    USER: REQUESTED: " + id_ + " and it exists");
+			Debug.log(ErrorLevel.INFO, " USER: REQUESTED: " + id_ + " and it exists");
 
 			inventory_object = loaded_inventory;  
 
@@ -135,7 +259,7 @@ app.get('/read', (req, res, next) => {
 		}
 		else
 		{
-			console.log(new Date(Date.now()).toLocaleString() + ":     USER: REQUESTED: " + id_ + " and it does not exist");
+			Debug.log(ErrorLevel.INFO, " USER: REQUESTED: " + id_ + " and it does not exist");
 
 			res.render('new_add', {id: id_})
 		}
@@ -146,11 +270,14 @@ app.get('/read', (req, res, next) => {
 /**
  * All other requests
  */
-app.get('*', (req, res, next) => { 
-	
-	res.send("YOU'RE DOING IT WRONG");
+app.get('*', (req, res, next) => {
+	Debug.log(ErrorLevel.ERR, "BAD REQUEST: " + req.url); 
+	res.send("BAD REQUEST - YOU'RE DOING IT WRONG");
 }); 
 
+/**
+ * Start the webserver
+ */
 app.listen(3000, ()=> { 
-	console.log('Server started on port: 3000')
+	Debug.log(ErrorLevel.INFO, 'Server started on port: 3000')
 });
