@@ -6,6 +6,8 @@ var fs = require('fs');
 
 var app = express();
 
+var port = process.env.port || 3000; 
+
 //app.use('/', express.static(__dirname + '/public'));
 
 app.set('view engine', 'pug')
@@ -278,7 +280,7 @@ app.get('*', (req, res, next) => {
 /**
  * Start the webserver
  */
-app.listen(process.env.port, () => {
+app.listen(port, () => {
 	
-	Debug.log(ErrorLevel.INFO, 'Server started on port: ' + process.env.port);
+	Debug.log(ErrorLevel.INFO, 'Server started on port: ' + port);
 });
