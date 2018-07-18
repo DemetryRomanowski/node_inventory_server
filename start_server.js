@@ -35,35 +35,6 @@ var Debug = {
  * Current Inventory object
  */
 var inventory_object = {
-
-	/**
-	 * Set the inventory object
-	 * @param {Number} upc The ID
-	 * @param {Number} pn The part number
-	 * @param {String} desc The description
-	 * @param {Number} min The minimum amount allowed in the inventory
-	 * @param {Number} max The maximum amount allowed in the inventory
-	 * @param {Number} manupc The manufacturer UPC
-	 * @param {Number} curramnt The current QTY in the inventory
-	 */
-	set : function(
-			upc, 
-			pn, 
-			desc, 
-			min, 
-			max, 
-			manupc, 
-			curramnt
-	){ 
-		this.upc = upc; 
-		this.part_number = pn; 
-		this.description = desc; 
-		this.min = min; 
-		this.max = max; 
-		this.manufacterer_upc = manupc; 
-		this.current_amount = curramnt;
-	},
-	line : 0, 
 	upc : 0, 
 	part_number : 0,  
 	description : "", 
@@ -80,9 +51,13 @@ var inventory_object = {
  * @param {Number} amnt 
  */
 function add_to_inventory(id, amnt){ 
-	Debug.log(ErrorLevel.INFO, "ADDED: " + id); 
+	console.log(typeof(inventory_object.current_amount));
 
-	inventory_object.current_amount += amnt; 
+	inventory_object.current_amount = Number.parseInt(inventory_object.current_amount + amnt); 
+
+	update_item(inventory_object, () => { 
+		Debug.log(ErrorLevel.INFO, "ADDED: " + id); 
+	});
 }
 
 /**
@@ -92,37 +67,53 @@ function add_to_inventory(id, amnt){
  * @param {Number} amnt 
  */
 function remove_from_inventory(id, amnt){
-	Debug.log(ErrorLevel.INFO, "REMOVED: " + id); 
+	console.log(typeof(inventory_object.current_amount));
 
-	inventory_object.current_amount -= amnt;
+	inventory_object.current_amount = Number.parseInt(inventory_object.current_amount - amnt);
+
+	update_item(inventory_object, () => { 
+		Debug.log(ErrorLevel.INFO, "REMOVED: " + id); 
+	});
 } 
 
 /**
  * Load the data from the database
+ * @param {String} file The file name
  * @param {Function} callback The callback that gets called once data is finished reading
  */
-function load_data(callback)
+function load_data(file, callback)
 {
-	fs.readFile("inventory_db.csv", 'utf8', (err, raw_data) => { 
-		if(err)
-			Debug.log(ErrorLevel.ERR, err.message); 
-
-		callback(raw_data); 
+	fs.readFile("./db/"+file+".csv", 'utf8', (err, raw_data) => { 
+		if(err){
+			Debug.log(ErrorLevel.ERR, "Error reading file: " +  err.message); 
+			callback(undefined);
+		}
+		else
+		{
+			Debug.log(ErrorLevel.INFO, "Read data successfully")
+			callback(raw_data);
+		} 
 	});
 }
 
 /**
- * 
+ * Write data to the database
+ * @param {String} file The filename
  * @param {String} data The data to write to the file 
  * @param {Function} callback The callback that gets called once data is finished writing 
  */
-function write_data(data, callback)
+function write_data(file, data, callback)
 {
-	fs.writeFile("inventory_db.csv", data, (err) => {
-		if(err)
-			Debug.log(ErrorLevel.ERR, err.message); 
-
-		callback(); 
+	fs.writeFile("./db/"+file+".csv", data, (err) => {
+		if(err){
+			Debug.log(ErrorLevel.ERR, "Error writing file: " + err.message); 
+			callback(undefined)
+		}
+		else
+		{
+			Debug.log(ErrorLevel.INFO, "Wrote data successfully");
+			callback(); 
+		}
 	});
 }
 
@@ -133,54 +124,71 @@ function write_data(data, callback)
  * @param {function} callback The callback that passes a boolean value if the id was found and other data
  */
 function load_check_id_exists(id, callback) {
-	load_data((data) => { 
-		var lines = data.split('\n');
-		var words; 
-
-		for(var i = 1; i < lines.length - 1; i++)
+	load_data(id, (data) => { 
+		if(data != undefined)
 		{
-			words = lines[i].split(',');
+			var words = data.split(','); 
 
-			if(words[1] == id)
-			{
-				callback(true, 
-				{
-					line : i, 
-					upc : words[0], 
-					part_number : words[1],  
-					description : words[2], 
-					min : words[3], 
-					max : words[4], 
-					manufacterer_upc : words[5], 
-					current_amount : words[6].replace('\r', '')
-				});
-				return; 
-			}
+			callback(true, {
+				upc : Number.parseInt(words[0]), 
+				part_number : Number.parseInt(words[1]), 
+				description : words[2], 
+				min : Number.parseInt(words[3]), 
+				max : Number.parseInt(words[4]), 
+				manufacterer_upc : Number.parseInt(words[5]), 
+				current_amount : Number.parseInt(words[6].replace('\r', ''))
+			});
 		}
-		callback(false, null);
+		else
+		{
+			callback(false, {upc: id});
+		}
 	});
 }
 
 /**
+ * Create a string from the object
+ * @param {Object} obj The inventory object to turn into a string
+ * @returns {String} The string to save to file 
+ */
+function inventory_object_to_string(obj)
+{
+	return obj.upc + "," +
+		   obj.part_number + "," + 
+		   obj.description + "," +
+		   obj.min + "," +
+		   obj.max + "," +
+		   obj.manufacterer_upc + "," +
+		   obj.current_amount;
+}
+
+/**
  * Add a new item to the inventory
- * TODO(Demetry): Fix this shit
  * 
- * @param {Object} inventory_object The inventory object 
+ * @param {Object} inventory_object The inventory object to create
  * @param {Function} callback The callback once this is finished 
  */
 function add_new_item(inventory_object, callback)
 {
-	load_check_id_exists(inventory_object.id, (loaded_object, exists)=> { 
-		if(!exists) return; 
-		var inventory_object_string;
+	var inventory_object_string = inventory_object_to_string(inventory_object); 
 
-		var line = loaded_object.line; 
+	write_data(inventory_object.upc, inventory_object_string, () => { 
+		callback(); 
+	});
+}
 
-		
+/**
+ * Update an item in the inventory
+ * 
+ * @param {Object} inventory_object The inventory object to update
+ * @param {Function} callback The callback once its complete 
+ */
+function update_item(inventory_object, callback) 
+{
+	var inventory_object_string = inventory_object_to_string(inventory_object); 
 
-		write_data(inventory_object_string, () => { 
-			callback(); 
-		});
+	write_data(inventory_object.upc, inventory_object_string, () => { 
+		callback(); 
 	});
 }
 
@@ -202,10 +210,18 @@ app.get('/addnew', (req, res, next) => {
 		Debug.log(Debug.ERR, "QUERY INCORRECTLY FORMATTED"); 
 	}
 
-	inventory_object.set(query.id, query.pn, query.desc, query.min, query.max, query.manupc, query.curramnt);
-	
-	add_new_item(inventory_object, () => { 
-		res.render('index', {id: id_});
+	inventory_object = {
+		upc: Number.parseInt(query.id), 
+		part_number: Number.parseInt(query.pn),
+		description: query.desc,
+		min: Number.parseInt(query.min),
+		max: Number.parseInt(query.max),
+		manufacterer_upc: Number.parseInt(query.manupc),
+		current_amount: Number.parseInt(query.curramnt)
+	};
+
+	add_new_item(inventory_object,  () => { 
+		res.render('index', {id: query.id, inventory_object});
 	}); 
 });
 
@@ -225,14 +241,14 @@ app.get('/inventory', (req, res, next) => {
 
 	if(add_ == 'true')
 	{
-		add_to_inventory(id_); 
+		add_to_inventory(id_, 1); 
 	}
 	else
 	{ 
-		remove_from_inventory(id_); 
+		remove_from_inventory(id_, 1); 
 	}
 	
-	res.render('index', { id: id_ });
+	res.render('index', { id: id_, inventory_object: inventory_object });
 }); 
 
 /**
@@ -251,22 +267,14 @@ app.get('/read', (req, res, next) => {
 	inventory_object = null;
 
 	load_check_id_exists(id_, (exists, loaded_inventory) => { 
+		Debug.log(ErrorLevel.INFO, "USER: REQUESTED: " + id_ + " and it exists");
+		inventory_object = loaded_inventory;
+		
 		if(exists == true)
-		{ 
-			Debug.log(ErrorLevel.INFO, " USER: REQUESTED: " + id_ + " and it exists");
-
-			inventory_object = loaded_inventory;  
-
 			res.render('index', { id: id_, inventory_object: inventory_object});
-		}
-		else
-		{
-			Debug.log(ErrorLevel.INFO, " USER: REQUESTED: " + id_ + " and it does not exist");
-
-			res.render('new_add', {id: id_})
-		}
+		else 
+			res.render('new_add', {id: id_});
 	});
-	
 }); 
 
 /**

@@ -15,9 +15,13 @@ script(type='text/javascript').
 	});
 
 h1 !{inventory_object.description}
-
-p QTY: !{inventory_object.current_amount}
-	  
+p Part Number: !{inventory_object.upc}
+br
+p Current QTY: !{inventory_object.current_amount}
+br
+p QTY: 
+input#qty_input
+br
 a#add_button
 	button Add
 a#remove_button
