@@ -1,82 +1,84 @@
-// INDEX HTML
-script(src='https://code.jquery.com/jquery-3.3.1.min.js' integrity='sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=' crossorigin='anonymous')
-script(type='text/javascript').
-	var add_button;
-	var clear_button;
-	$(document).ready(()=> {
+extends template.pug
 
-		var _id = !{id}; 
+block head
+	script(type='text/javascript').
+		var add_button;
+		var clear_button;
+		$(document).ready(()=> {
 
-		var qr_input       = $('#qr');
-		var pn_input       = $('#pn'); 
-		var desc_input     = $('#desc'); 
-		var min_input      = $('#min'); 
-		var max_input      = $('#max'); 
-		var manupc_input   = $('#manupc'); 
-		var curramnt_input = $('#curramnt');
+			var _id = !{id}; 
 
-		if(_id != undefined)
-		{
-			qr_input.prop("disabled", true); 
-			qr_input.val(_id); 
-			qr_input.attr("class", "clearable")
-		}
-		else
-		{
-			qr_input.prop("disabled", false);
-			qr_input.attr("class", "")
-		}
+			var qr_input       = $('#qr');
+			var pn_input       = $('#pn'); 
+			var desc_input     = $('#desc'); 
+			var min_input      = $('#min'); 
+			var max_input      = $('#max'); 
+			var manupc_input   = $('#manupc'); 
+			var curramnt_input = $('#curramnt');
 
-		add_button = $('#add_button'); 
-		clear_button = $('#clear_button');
+			if(_id != undefined)
+			{
+				qr_input.prop("disabled", true); 
+				qr_input.val(_id); 
+				qr_input.attr("class", "clearable")
+			}
+			else
+			{
+				qr_input.prop("disabled", false);
+				qr_input.attr("class", "")
+			}
+
+			add_button = $('#add_button'); 
+			clear_button = $('#clear_button');
 
 
-		$('input').change(() => {		
-			add_button.attr("href", "/addnew?"+
-									"id="+qr_input.val()+
-									"&pn="+pn_input.val()+
-									"&desc="+desc_input.val()+
-									"&min="+min_input.val()+
-									"&max="+max_input.val()+
-									"&manupc="+manupc_input.val()+ 
-									"&curramnt="+curramnt_input.val());
+			$('input').change(() => {		
+				add_button.attr("href", "/addnew?"+
+										"id="+qr_input.val()+
+										"&pn="+pn_input.val()+
+										"&desc="+desc_input.val()+
+										"&min="+min_input.val()+
+										"&max="+max_input.val()+
+										"&manupc="+manupc_input.val()+ 
+										"&curramnt="+curramnt_input.val());
 
-		}); 
+			}); 
 
-		add_button.click((e) => { 
-			var url = $(this).attr("href"); 
+			add_button.click((e) => { 
+				var url = $(this).attr("href"); 
 
-			confirm("Are you sure you want to create a new item?") ? $(document).load(url) : e.preventDefault(); 
+				confirm("Are you sure you want to create a new item?") ? $(document).load(url) : e.preventDefault(); 
+			});
+
+			clear_button.click(() => { 
+				$('input').val('');
+			});
 		});
 
-		clear_button.click(() => { 
-			$('input').val('');
-		});
-	});
+block body
+	| QRcode
+	input#qr
+	br
+	| Part Number
+	input#pn.clearable
+	br
+	| Description
+	input#desc.clearable
+	br
+	| Min
+	input#min.clearable
+	br
+	| Max 
+	input#max.clearable
+	br
+	| Manufacturer UPC
+	input#manupc.clearable
+	br
+	| Current Amount
+	input#curramnt.clearable
+	br
 
-| QRcode
-input#qr
-br
-| Part Number
-input#pn.clearable
-br
-| Description
-input#desc.clearable
-br
-| Min
-input#min.clearable
-br
-| Max 
-input#max.clearable
-br
-| Manufacturer UPC
-input#manupc.clearable
-br
-| Current Amount
-input#curramnt.clearable
-br
-
-a#add_button
-	button Add
-a#clear_button
-	button Clear
+	a#add_button
+		button Add
+	a#clear_button
+		button Clear

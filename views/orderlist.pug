@@ -1,0 +1,11 @@
+extends template.pug
+
+block body
+    | ORDER LIST
+    - console.log(order)
+    ul
+        each item in !{order}
+            p TEST
+            li #{item.part_number}
+            li #{item.description}
+            br

@@ -1,28 +1,30 @@
 // INDEX HTML
-script(src='https://code.jquery.com/jquery-3.3.1.min.js' integrity='sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=' crossorigin='anonymous')
-script(type='text/javascript').
-	var add_button;
-	var remove_button;
-	$(document).ready(()=> {
-		add_button = $('#add_button');
-		remove_button = $('#remove_button');
-		_id = '?id=' + !{id} + '&add=true';
+extends template.pug
+block head
+	script(type='text/javascript').
+		var add_button;
+		var remove_button;
+		$(document).ready(()=> {
+			add_button = $('#add_button');
+			remove_button = $('#remove_button');
+			_id = '?id=' + !{id} + '&add=true';
+			
+			add_button.attr('href', '/inventory'+_id);
+			
+			_id = '?id=' + !{id} + '&add=false';
+			remove_button.attr('href', '/inventory'+_id);
+		});
 		
-		add_button.attr('href', '/inventory'+_id);
-		
-		_id = '?id=' + !{id} + '&add=false';
-		remove_button.attr('href', '/inventory'+_id);
-	});
-
-h1 !{inventory_object.description}
-p Part Number: !{inventory_object.upc}
-br
-p Current QTY: !{inventory_object.current_amount}
-br
-p QTY: 
-input#qty_input
-br
-a#add_button
-	button Add
-a#remove_button
-	button Remove
+block body
+	h1 !{inventory_object.description}
+	p Part Number: !{inventory_object.upc}
+	br
+	p Current QTY: !{inventory_object.current_amount}
+	br
+	p QTY: 
+	input#qty_input
+	br
+	a#add_button
+		button Add
+	a#remove_button
+		button Remove
