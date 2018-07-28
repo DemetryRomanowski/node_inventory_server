@@ -1,10 +1,10 @@
-// INDEX HTML
 extends template.pug
+
 block head
 	script(type='text/javascript').
 		var add_button;
 		var remove_button;
-		$(document).ready(()=> {
+		$(document).ready(() => {
 			add_button = $('#add_button');
 			remove_button = $('#remove_button');
 			_id = '?id=' + !{id} + '&add=true';

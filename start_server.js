@@ -1,84 +1,24 @@
+"use strict";
+
 //start_server.js
 // var http = require('http');
-var express = require('express');
+const express = require('express');
 // var path = require('path'); 
-var fs = require('fs'); 
+const db = require('./src/database');
+const fs = require('fs');
 
-var app = express();
+const Debug = require('./src/debug');
+const ErrorLevel = Debug.ErrorLevel;
 
-var port = process.env.PORT || 3000; 
+const app = express();
+
+var port = process.env.PORT || 3000;
 
 //app.use('/', express.static(__dirname + '/public'));
 
-app.log_set = true; //This sets weather to log everthing to a file
-
+Debug.set("log", true); //This sets to log every thing to a file
+Debug.set("logfile", "log.txt");
 app.set('view engine', 'pug');
-
-var Colors = {
-	Reset : "\x1b[0m",
-	Bright : "\x1b[1m",
-	Dim : "\x1b[2m",
-	Underscore : "\x1b[4m",
-	Blink : "\x1b[5m",
-	Reverse : "\x1b[7m",
-	Hidden : "\x1b[8m",
-	FgBlack : "\x1b[30m",
-	FgRed : "\x1b[31m",
-	FgGreen : "\x1b[32m",
-	FgYellow : "\x1b[33m",
-	FgBlue : "\x1b[34m",
-	FgMagenta : "\x1b[35m",
-	FgCyan : "\x1b[36m",
-	FgWhite : "\x1b[37m",
-	BgBlack : "\x1b[40m",
-	BgRed : "\x1b[41m",
-	BgGreen : "\x1b[42m",
-	BgYellow : "\x1b[43m",
-	BgBlue : "\x1b[44m",
-	BgMagenta : "\x1b[45m",
-	BgCyan : "\x1b[46m",
-	BgWhite : "\x1b[47m",
-	Empty : ""
-}
-
-var ErrorLevel = { 
-	DEBUG : {
-		data: "DEBUG: ",
-		fg_color: Colors.FgYellow, 
-		bg_color: Colors.Empty
-	}, 
-	INFO : {
-		data: "INFO: ", 
-		fg_color: Colors.FgGreen,
-		bg_color: Colors.Empty
-	}, 
-	WARN : {
-		data: "WARNING: ",
-		fg_color: Colors.FgRed,
-		bg_color: Colors.Empty
-	}, 
-	ERR : {
-		data: "ERROR: ", 
-		fg_color: Colors.FgRed, 
-		bg_color: Colors.Bright
-	}
-};
-
-var Debug = {
-	log : function(err_level, string) { 
-		/**
-		 * TODO(Demetry): Eventually add a log file writer
-		 */
-		if(err_level === undefined)
-			throw "ERROR LEVEL IS UNDEFINED";
-	
-		if(app.log_set)
-			;
-
-		//Print the log to the console
-		console.log(err_level.fg_color + err_level.bg_color + '%s' + Colors.Reset, new Date(Date.now()).toLocaleString() + " : " + err_level.data + string);
-	}
-};
 
 /**
  * Current Inventory object
@@ -91,7 +31,7 @@ var inventory_object = {
 	max : 0, 
 	manufacterer_upc : 0, 
 	current_amount : 0
-}
+};
 
 /**
  * Parse the inventory object from the file string
@@ -168,7 +108,6 @@ function check_for_duplicates_sync(db_file)
  * @param {String} csv_file The CSV inventory file
  * @param {String} db_path The path for the databse
  * @param {Function} callback The callback once its complete
- * 
  */
 function create_db_from_csv(csv_file, db_path, callback)
 {
@@ -262,7 +201,7 @@ function create_order_list(low_stock, callback)
 	var order = {
 		part_number: low_stock.part_number, 
 		description: low_stock.description
-	}
+	};
 	
 	Debug.log(ErrorLevel.INFO, "Item to order added: " + order);
 	
@@ -309,36 +248,62 @@ function remove_from_inventory(id, amnt){
  */
 function load_data(file, callback)
 {
-	fs.readFile("./db/"+file+".csv", 'utf8', (err, raw_data) => { 
+	fs.readFile("./db/"+file+".csv", 'utf8', (err, raw_data) => {
 		if(err){
 			Debug.log(ErrorLevel.ERR, "Error reading file: " +  err.message); 
 			callback(undefined);
 		}
 		else
 		{
-			Debug.log(ErrorLevel.INFO, "Read data successfully")
+			Debug.log(ErrorLevel.INFO, "Read data successfully");
 			callback(raw_data);
 		} 
 	});
 }
 
 /**
- * Write data to the database
+ * Write data to a file, and create it if it doesn't exist
+ *
  * @param {String} file The filename
  * @param {String} data The data to write to the file 
- * @param {Function} callback The callback that gets called once data is finished writing 
+ * @param {Function} onComplete The callback that gets called once data is finished writing
+ * @param {Function} onError The callback that gets called if there is an error
  */
-function write_data(file, data, callback)
+function write_data(file, data, onComplete, onError)
+{
+	// console.log(file);
+	fs.writeFile(file, data, (err) => {
+		if(err){
+			// Debug.log(ErrorLevel.ERR, "Error writing file: " + err.message);
+			if(onError)
+				onError(err);
+		}
+		else
+		{
+			// Debug.log(ErrorLevel.INFO, "Wrote data successfully");
+			if(onComplete)
+				onComplete();
+		}
+	});
+}
+
+/**
+ * Write data to the database
+ * @param {String} file The filename
+ * @param {String} data The data to write to the file
+ * @param {Function} callback The callback that gets called once data is finished writing
+ */
+function write_data_db(file, data, callback)
 {
 	fs.writeFile("./db/"+file+".csv", data, (err) => {
 		if(err){
-			Debug.log(ErrorLevel.ERR, "Error writing file: " + err.message); 
+			Debug.log(ErrorLevel.ERR, "Error writing file: " + err.message);
 			callback(undefined)
 		}
 		else
 		{
 			Debug.log(ErrorLevel.INFO, "Wrote data successfully");
-			callback(); 
+			callback();
 		}
 	});
 }
@@ -351,8 +316,8 @@ function write_data(file, data, callback)
  */
 function load_check_id_exists(id, callback) 
 {
-	load_data(id, (data) => { 
-		if(data != undefined)
+	load_data(id.toString(), (data) => {
+		if(data !== undefined)
 		{
 			var words = data.split(','); 
 
@@ -400,7 +365,7 @@ function add_new_item(inventory_object, callback)
 {
 	var inventory_object_string = inventory_object_to_string(inventory_object); 
 
-	write_data(inventory_object.upc, inventory_object_string, () => { 
+	write_data_db(inventory_object.upc, inventory_object_string, () => {
 		callback(); 
 	});
 }
@@ -415,7 +380,7 @@ function update_item(inventory_object, callback)
 {
 	var inventory_object_string = inventory_object_to_string(inventory_object); 
 
-	write_data(inventory_object.upc, inventory_object_string, () => { 
+	write_data_db(inventory_object.upc, inventory_object_string, () => {
 		callback(); 
 	});
 }
@@ -423,10 +388,11 @@ function update_item(inventory_object, callback)
 /**
  * Handle the addnew request
  */
-app.get('/addnew', (req, res, next) => { 
+app.get('/addnew', (req, res) => {
 	var query = req.query;
 
-	if( !query.id || 
+	if( !query ||
+		!query.id ||
 		!query.pn || 
 		!query.desc || 
 		!query.min || 
@@ -457,7 +423,7 @@ app.get('/addnew', (req, res, next) => {
  * When the user requests to add or remove 
  * an item from the inventory
  */
-app.get('/inventory', (req, res, next) => { 
+app.get('/inventory', (req, res) => {
 	if(!req.query.id || !req.query.add)
 	{
 		res.send("ERROR QUERY INCORRECTLY FORMATTED");
@@ -467,7 +433,7 @@ app.get('/inventory', (req, res, next) => {
 	var id_ = req.query.id; 
 	var add_ = req.query.add; 
 
-	if(add_ == 'true')
+	if(add_ === 'true')
 		add_to_inventory(id_, 1); 
 	else
 		remove_from_inventory(id_, 1); 
@@ -478,9 +444,9 @@ app.get('/inventory', (req, res, next) => {
 /**
  * When user requests to create a order list
  */
-app.get('/orderlist', (req, res, next) => { 
+app.get('/orderlist', (req, res) => {
 
-	var order = []
+	var order = [];
 
 	check_all_max_min((low_stock) => { 
 		create_order_list(low_stock, (order) => { 
@@ -497,7 +463,7 @@ app.get('/orderlist', (req, res, next) => {
  * When the user requests to read a item from the inventory
  * (SCANS A QR CODE)
  */
-app.get('/read', (req, res, next) => { 
+app.get('/read', (req, res) => {
 	if(!req.query.id)
 	{
 		Debug.log(ErrorLevel.ERROR, "USER: REQUESTED TO READ WITH NO ID"); 
@@ -512,7 +478,7 @@ app.get('/read', (req, res, next) => {
 		Debug.log(ErrorLevel.INFO, "USER: REQUESTED: " + id_ + " and it exists");
 		inventory_object = loaded_inventory;
 		
-		if(exists == true)
+		if(exists === true)
 			res.render('index', { id: id_, inventory_object: inventory_object});
 		else 
 			res.render('new_add', {id: id_});
@@ -522,7 +488,7 @@ app.get('/read', (req, res, next) => {
 /**
  * All other requests
  */
-app.get('*', (req, res, next) => {
+app.get('*', (req, res) => {
 	Debug.log(ErrorLevel.ERR, "BAD REQUEST: " + req.url); 
 	res.send("BAD REQUEST - YOU'RE DOING IT WRONG");
 }); 
@@ -532,7 +498,17 @@ app.get('*', (req, res, next) => {
  */
 app.listen(port, () => {
 	Debug.log(ErrorLevel.INFO, 'Server started on port: ' + port);
-	
+
+	//db.migrate_db("CREATE TABLE Users (UserID integer PRIMARY KEY AUTOINCREMENT, FirstName text, LastName text, HashedPassword varchar);" +
+    //    "CREATE TABLE Inventory (ItemID integer PRIMARY KEY AUTOINCREMENT, UPC varchar, PartNumber varchar, ManufactererUPC varchar, Manufacterer varchar, Description text, Min integer, Max integer, Qty integer);");
+
+    db.add_user({
+        user_id : 1,
+        first_name : "Demetry",
+        last_name : "Romanowski",
+        password : "testing"
+    });
+
 	if(!check_for_duplicates_sync('inventory_db.csv'))
 	{
 		if(!fs.existsSync('./db'))
