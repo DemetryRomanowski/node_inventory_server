@@ -12,6 +12,10 @@ const ErrorLevel = Debug.ErrorLevel;
 
 const app = express();
 
+const Models = require('./src/models/models');
+const UserModel = Models.User;
+const InventoryModel = Models.Inventory;
+
 var port = process.env.PORT || 3000;
 
 //app.use('/', express.static(__dirname + '/public'));
@@ -502,12 +506,15 @@ app.listen(port, () => {
 	//db.migrate_db("CREATE TABLE Users (UserID integer PRIMARY KEY AUTOINCREMENT, FirstName text, LastName text, HashedPassword varchar);" +
     //    "CREATE TABLE Inventory (ItemID integer PRIMARY KEY AUTOINCREMENT, UPC varchar, PartNumber varchar, ManufactererUPC varchar, Manufacterer varchar, Description text, Min integer, Max integer, Qty integer);");
 
-    db.add_user({
-        user_id : 1,
-        first_name : "Demetry",
-        last_name : "Romanowski",
-        password : "testing"
-    });
+    let user = UserModel;
+
+    user.first_name = "Demetry";
+	user.last_name = "Romanowski";
+	user.email = "demetryromanowski@gmail.com";
+	user.phone_number = "1-705-271-5704";
+	user.hashed_password = "jah99emm5kennsk";
+
+	db.add_user(user);
 
 	if(!check_for_duplicates_sync('inventory_db.csv'))
 	{

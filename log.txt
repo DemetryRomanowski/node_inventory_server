@@ -103,3 +103,894 @@
 2018-7-27 22:19:52 : INFO: Server started on port: 3000
 2018-7-27 22:20:49 : INFO: Server started on port: 3000
 2018-7-27 22:20:51 : INFO: Server started on port: 3000
+2018-7-28 13:27:09 : INFO: Server started on port: 3000
+2018-7-28 13:32:24 : INFO: Server started on port: 3000
+2018-7-28 13:32:37 : INFO: Server started on port: 3000
+2018-7-28 13:32:48 : INFO: Server started on port: 3000
+2018-7-28 13:34:59 : INFO: Server started on port: 3000
+2018-7-28 13:35:58 : INFO: Server started on port: 3000
+2018-7-28 13:36:07 : INFO: Server started on port: 3000
+2018-7-28 13:36:11 : INFO: Server started on port: 3000
+2018-7-30 16:27:39 : INFO: Server started on port: 3000
+2018-7-30 16:27:53 : INFO: Server started on port: 3000
+2018-7-30 16:29:29 : INFO: Server started on port: 3000
+2018-7-30 16:29:34 : INFO: Server started on port: 3000
+2018-7-30 16:29:47 : INFO: Server started on port: 3000
+2018-7-30 16:29:58 : INFO: Server started on port: 3000
+2018-7-30 16:30:33 : INFO: Server started on port: 3000
+2018-7-30 16:31:42 : INFO: Server started on port: 3000
+2018-7-30 16:35:14 : INFO: Server started on port: 3000
+2018-7-30 16:36:32 : INFO: Server started on port: 3000
+2018-7-30 16:36:50 : INFO: Server started on port: 3000
+2018-7-30 16:37:18 : INFO: Server started on port: 3000
+2018-7-30 16:38:00 : INFO: Server started on port: 3000
+2018-7-30 16:38:35 : INFO: Server started on port: 3000
+2018-7-30 16:38:36 : INFO: Server started on port: 3000
+2018-7-30 16:38:38 : INFO: Server started on port: 3000
+2018-7-30 16:40:35 : INFO: Server started on port: 3000
+2018-7-30 16:41:26 : INFO: Server started on port: 3000
+2018-7-30 16:41:45 : INFO: Server started on port: 3000
+2018-7-30 16:42:15 : INFO: Server started on port: 3000
+2018-7-30 16:42:41 : INFO: Server started on port: 3000
+2018-7-30 16:43:24 : INFO: Server started on port: 3000
+2018-7-30 16:43:24 : ERROR: Error: SQLITE_ERROR: no such column: Demetry
+2018-7-30 16:44:05 : INFO: Server started on port: 3000
+2018-7-30 16:44:45 : INFO: Server started on port: 3000
+2018-7-30 16:44:45 : ERROR: Error user already exists!
+2018-7-30 16:44:53 : INFO: Server started on port: 3000
+2018-7-30 16:44:53 : ERROR: Error user already exists!
+2018-7-30 16:45:04 : INFO: Server started on port: 3000
+2018-7-30 16:45:04 : ERROR: Error user already exists!
+2018-7-30 16:45:10 : INFO: Server started on port: 3000
+2018-7-30 16:45:10 : ERROR: Error user already exists!
+2018-7-30 16:45:18 : INFO: Server started on port: 3000
+2018-7-30 16:45:18 : ERROR: Error user already exists!
+2018-7-30 16:45:34 : INFO: Server started on port: 3000
+2018-7-30 16:45:34 : ERROR: Error user already exists!
+2018-7-30 16:45:55 : INFO: Server started on port: 3000
+2018-7-30 16:45:55 : ERROR: Error user already exists!
+2018-7-30 16:46:59 : INFO: Server started on port: 3000
+2018-7-30 16:46:59 : ERROR: Error user already exists!
+2018-7-30 16:47:41 : INFO: Server started on port: 3000
+2018-7-30 16:47:41 : ERROR: Error user already exists!
+2018-7-30 16:48:12 : INFO: Server started on port: 3000
+2018-7-30 16:48:12 : ERROR: Error user already exists!
+2018-7-30 17:05:18 : INFO: Server started on port: 3000
+2018-7-30 17:05:18 : ERROR: Error user already exists!
+2018-7-30 17:05:18 : ERROR: Error user already exists!
+2018-7-30 17:05:18 : ERROR: Error user already exists!
+2018-7-30 17:05:18 : ERROR: Error user already exists!
+2018-7-30 17:05:18 : ERROR: Error user already exists!
+2018-7-30 17:05:18 : ERROR: Error user already exists!
+2018-7-30 17:05:18 : ERROR: Error user already exists!
+2018-7-30 17:05:18 : ERROR: Error user already exists!
+2018-7-30 17:05:18 : ERROR: Error user already exists!
+2018-7-30 17:05:18 : ERROR: Error user already exists!
+2018-7-30 17:05:18 : ERROR: Error user already exists!
+2018-7-30 17:05:18 : ERROR: Error user already exists!
+2018-7-30 17:05:18 : ERROR: Error user already exists!
+2018-7-30 17:05:18 : ERROR: Error user already exists!
+2018-7-30 17:05:18 : ERROR: Error user already exists!
+2018-7-30 17:05:18 : ERROR: Error user already exists!
+2018-7-30 17:05:18 : ERROR: Error user already exists!
+2018-7-30 17:05:18 : ERROR: Error user already exists!
+2018-7-30 17:05:18 : ERROR: Error user already exists!
+2018-7-30 17:05:18 : ERROR: Error user already exists!
+2018-7-30 17:05:18 : ERROR: Error user already exists!
+2018-7-30 17:05:18 : ERROR: Error user already exists!
+2018-7-30 17:05:18 : ERROR: Error user already exists!
+2018-7-30 17:05:18 : ERROR: Error user already exists!
+2018-7-30 17:05:19 : ERROR: Error user already exists!
+2018-7-30 17:05:18 : ERROR: Error user already exists!
+2018-7-30 17:06:35 : INFO: Server started on port: 3000
+2018-7-30 17:06:35 : ERROR: Error user already exists!
+2018-7-30 17:06:35 : ERROR: Error user already exists!
+2018-7-30 17:06:35 : ERROR: Error user already exists!
+2018-7-30 17:06:35 : ERROR: Error user already exists!
+2018-7-30 17:06:35 : ERROR: Error user already exists!
+2018-7-30 17:06:35 : ERROR: Error user already exists!
+2018-7-30 17:06:35 : ERROR: Error user already exists!
+2018-7-30 17:06:35 : ERROR: Error user already exists!
+2018-7-30 17:06:35 : ERROR: Error user already exists!
+2018-7-30 17:06:35 : ERROR: Error user already exists!
+2018-7-30 17:06:35 : ERROR: Error user already exists!
+2018-7-30 17:06:35 : ERROR: Error user already exists!
+2018-7-30 17:06:35 : ERROR: Error user already exists!
+2018-7-30 17:06:35 : ERROR: Error user already exists!
+2018-7-30 17:06:35 : ERROR: Error user already exists!
+2018-7-30 17:06:35 : ERROR: Error user already exists!
+2018-7-30 17:06:35 : ERROR: Error user already exists!
+2018-7-30 17:06:35 : ERROR: Error user already exists!
+2018-7-30 17:06:35 : ERROR: Error user already exists!
+2018-7-30 17:06:35 : ERROR: Error user already exists!
+2018-7-30 17:06:35 : ERROR: Error user already exists!
+2018-7-30 17:06:35 : ERROR: Error user already exists!
+2018-7-30 17:06:35 : ERROR: Error user already exists!
+2018-7-30 17:06:35 : ERROR: Error user already exists!
+2018-7-30 17:06:35 : ERROR: Error user already exists!
+2018-7-30 17:06:35 : ERROR: Error user already exists!
+2018-7-30 17:06:44 : INFO: Server started on port: 3000
+2018-7-30 17:06:44 : ERROR: Error user already exists!
+2018-7-30 17:06:44 : ERROR: Error user already exists!
+2018-7-30 17:06:44 : ERROR: Error user already exists!
+2018-7-30 17:06:44 : ERROR: Error user already exists!
+2018-7-30 17:06:44 : ERROR: Error user already exists!
+2018-7-30 17:06:44 : ERROR: Error user already exists!
+2018-7-30 17:06:44 : ERROR: Error user already exists!
+2018-7-30 17:06:44 : ERROR: Error user already exists!
+2018-7-30 17:06:44 : ERROR: Error user already exists!
+2018-7-30 17:06:44 : ERROR: Error user already exists!
+2018-7-30 17:06:44 : ERROR: Error user already exists!
+2018-7-30 17:06:44 : ERROR: Error user already exists!
+2018-7-30 17:06:44 : ERROR: Error user already exists!
+2018-7-30 17:06:44 : ERROR: Error user already exists!
+2018-7-30 17:06:44 : ERROR: Error user already exists!
+2018-7-30 17:06:44 : ERROR: Error user already exists!
+2018-7-30 17:06:44 : ERROR: Error user already exists!
+2018-7-30 17:06:44 : ERROR: Error user already exists!
+2018-7-30 17:06:44 : ERROR: Error user already exists!
+2018-7-30 17:06:44 : ERROR: Error user already exists!
+2018-7-30 17:06:44 : ERROR: Error user already exists!
+2018-7-30 17:06:44 : ERROR: Error user already exists!
+2018-7-30 17:06:44 : ERROR: Error user already exists!
+2018-7-30 17:06:44 : ERROR: Error user already exists!
+2018-7-30 17:06:44 : ERROR: Error user already exists!
+2018-7-30 17:06:44 : ERROR: Error user already exists!
+2018-7-30 17:06:57 : INFO: Server started on port: 3000
+2018-7-30 17:06:57 : ERROR: Error user already exists!
+2018-7-30 17:06:57 : ERROR: Error user already exists!
+2018-7-30 17:06:57 : ERROR: Error user already exists!
+2018-7-30 17:06:57 : ERROR: Error user already exists!
+2018-7-30 17:06:57 : ERROR: Error user already exists!
+2018-7-30 17:06:57 : ERROR: Error user already exists!
+2018-7-30 17:06:57 : ERROR: Error user already exists!
+2018-7-30 17:06:57 : ERROR: Error user already exists!
+2018-7-30 17:06:57 : ERROR: Error user already exists!
+2018-7-30 17:06:57 : ERROR: Error user already exists!
+2018-7-30 17:06:57 : ERROR: Error user already exists!
+2018-7-30 17:06:57 : ERROR: Error user already exists!
+2018-7-30 17:06:57 : ERROR: Error user already exists!
+2018-7-30 17:06:57 : ERROR: Error user already exists!
+2018-7-30 17:06:57 : ERROR: Error user already exists!
+2018-7-30 17:06:57 : ERROR: Error user already exists!
+2018-7-30 17:06:57 : ERROR: Error user already exists!
+2018-7-30 17:06:57 : ERROR: Error user already exists!
+2018-7-30 17:06:57 : ERROR: Error user already exists!
+2018-7-30 17:06:57 : ERROR: Error user already exists!
+2018-7-30 17:06:57 : ERROR: Error user already exists!
+2018-7-30 17:06:57 : ERROR: Error user already exists!
+2018-7-30 17:06:57 : ERROR: Error user already exists!
+2018-7-30 17:06:57 : ERROR: Error user already exists!
+2018-7-30 17:06:57 : ERROR: Error user already exists!
+2018-7-30 17:06:57 : ERROR: Error user already exists!
+2018-7-30 17:07:56 : INFO: Server started on port: 3000
+2018-7-30 17:07:56 : ERROR: Error user already exists!
+2018-7-30 17:07:56 : ERROR: Error user already exists!
+2018-7-30 17:07:56 : ERROR: Error user already exists!
+2018-7-30 17:07:56 : ERROR: Error user already exists!
+2018-7-30 17:07:56 : ERROR: Error user already exists!
+2018-7-30 17:07:56 : ERROR: Error user already exists!
+2018-7-30 17:07:56 : ERROR: Error user already exists!
+2018-7-30 17:07:56 : ERROR: Error user already exists!
+2018-7-30 17:07:56 : ERROR: Error user already exists!
+2018-7-30 17:07:56 : ERROR: Error user already exists!
+2018-7-30 17:07:56 : ERROR: Error user already exists!
+2018-7-30 17:07:56 : ERROR: Error user already exists!
+2018-7-30 17:07:56 : ERROR: Error user already exists!
+2018-7-30 17:07:56 : ERROR: Error user already exists!
+2018-7-30 17:07:56 : ERROR: Error user already exists!
+2018-7-30 17:07:56 : ERROR: Error user already exists!
+2018-7-30 17:07:56 : ERROR: Error user already exists!
+2018-7-30 17:07:56 : ERROR: Error user already exists!
+2018-7-30 17:07:56 : ERROR: Error user already exists!
+2018-7-30 17:07:56 : ERROR: Error user already exists!
+2018-7-30 17:07:56 : ERROR: Error user already exists!
+2018-7-30 17:07:56 : ERROR: Error user already exists!
+2018-7-30 17:07:56 : ERROR: Error user already exists!
+2018-7-30 17:07:56 : ERROR: Error user already exists!
+2018-7-30 17:07:56 : ERROR: Error user already exists!
+2018-7-30 17:07:56 : ERROR: Error user already exists!
+2018-7-30 17:08:08 : INFO: Server started on port: 3000
+2018-7-30 17:08:08 : ERROR: Error user already exists!
+2018-7-30 17:08:08 : ERROR: Error user already exists!
+2018-7-30 17:08:08 : ERROR: Error user already exists!
+2018-7-30 17:08:08 : ERROR: Error user already exists!
+2018-7-30 17:08:08 : ERROR: Error user already exists!
+2018-7-30 17:08:08 : ERROR: Error user already exists!
+2018-7-30 17:08:08 : ERROR: Error user already exists!
+2018-7-30 17:08:08 : ERROR: Error user already exists!
+2018-7-30 17:08:08 : ERROR: Error user already exists!
+2018-7-30 17:08:08 : ERROR: Error user already exists!
+2018-7-30 17:08:08 : ERROR: Error user already exists!
+2018-7-30 17:08:08 : ERROR: Error user already exists!
+2018-7-30 17:08:08 : ERROR: Error user already exists!
+2018-7-30 17:08:08 : ERROR: Error user already exists!
+2018-7-30 17:08:08 : ERROR: Error user already exists!
+2018-7-30 17:08:08 : ERROR: Error user already exists!
+2018-7-30 17:08:08 : ERROR: Error user already exists!
+2018-7-30 17:08:08 : ERROR: Error user already exists!
+2018-7-30 17:08:08 : ERROR: Error user already exists!
+2018-7-30 17:08:08 : ERROR: Error user already exists!
+2018-7-30 17:08:08 : ERROR: Error user already exists!
+2018-7-30 17:08:08 : ERROR: Error user already exists!
+2018-7-30 17:08:08 : ERROR: Error user already exists!
+2018-7-30 17:08:08 : ERROR: Error user already exists!
+2018-7-30 17:08:08 : ERROR: Error user already exists!
+2018-7-30 17:08:08 : ERROR: Error user already exists!
+2018-7-30 17:08:26 : INFO: Server started on port: 3000
+2018-7-30 17:08:26 : ERROR: Error user already exists!
+2018-7-30 17:08:26 : ERROR: Error user already exists!
+2018-7-30 17:08:26 : ERROR: Error user already exists!
+2018-7-30 17:08:26 : ERROR: Error user already exists!
+2018-7-30 17:08:26 : ERROR: Error user already exists!
+2018-7-30 17:08:26 : ERROR: Error user already exists!
+2018-7-30 17:08:26 : ERROR: Error user already exists!
+2018-7-30 17:08:26 : ERROR: Error user already exists!
+2018-7-30 17:08:26 : ERROR: Error user already exists!
+2018-7-30 17:08:26 : ERROR: Error user already exists!
+2018-7-30 17:08:26 : ERROR: Error user already exists!
+2018-7-30 17:08:26 : ERROR: Error user already exists!
+2018-7-30 17:08:26 : ERROR: Error user already exists!
+2018-7-30 17:08:26 : ERROR: Error user already exists!
+2018-7-30 17:08:26 : ERROR: Error user already exists!
+2018-7-30 17:08:26 : ERROR: Error user already exists!
+2018-7-30 17:08:26 : ERROR: Error user already exists!
+2018-7-30 17:08:26 : ERROR: Error user already exists!
+2018-7-30 17:08:26 : ERROR: Error user already exists!
+2018-7-30 17:08:26 : ERROR: Error user already exists!
+2018-7-30 17:08:26 : ERROR: Error user already exists!
+2018-7-30 17:08:26 : ERROR: Error user already exists!
+2018-7-30 17:08:26 : ERROR: Error user already exists!
+2018-7-30 17:08:26 : ERROR: Error user already exists!
+2018-7-30 17:08:26 : ERROR: Error user already exists!
+2018-7-30 17:08:26 : ERROR: Error user already exists!
+2018-7-30 17:10:26 : INFO: Server started on port: 3000
+2018-7-30 17:10:26 : ERROR: Error user already exists!
+2018-7-30 17:10:26 : ERROR: Error user already exists!
+2018-7-30 17:10:26 : ERROR: Error user already exists!
+2018-7-30 17:10:26 : ERROR: Error user already exists!
+2018-7-30 17:10:26 : ERROR: Error user already exists!
+2018-7-30 17:10:26 : ERROR: Error user already exists!
+2018-7-30 17:10:26 : ERROR: Error user already exists!
+2018-7-30 17:10:26 : ERROR: Error user already exists!
+2018-7-30 17:10:26 : ERROR: Error user already exists!
+2018-7-30 17:10:26 : ERROR: Error user already exists!
+2018-7-30 17:10:26 : ERROR: Error user already exists!
+2018-7-30 17:10:26 : ERROR: Error user already exists!
+2018-7-30 17:10:26 : ERROR: Error user already exists!
+2018-7-30 17:10:26 : ERROR: Error user already exists!
+2018-7-30 17:10:26 : ERROR: Error user already exists!
+2018-7-30 17:10:26 : ERROR: Error user already exists!
+2018-7-30 17:10:26 : ERROR: Error user already exists!
+2018-7-30 17:10:26 : ERROR: Error user already exists!
+2018-7-30 17:10:26 : ERROR: Error user already exists!
+2018-7-30 17:10:26 : ERROR: Error user already exists!
+2018-7-30 17:10:26 : ERROR: Error user already exists!
+2018-7-30 17:10:26 : ERROR: Error user already exists!
+2018-7-30 17:10:26 : ERROR: Error user already exists!
+2018-7-30 17:10:26 : ERROR: Error user already exists!
+2018-7-30 17:10:26 : ERROR: Error user already exists!
+2018-7-30 17:10:26 : ERROR: Error user already exists!
+2018-7-30 17:10:36 : INFO: Server started on port: 3000
+2018-7-30 17:10:36 : ERROR: Error user already exists!
+2018-7-30 17:10:36 : ERROR: Error user already exists!
+2018-7-30 17:10:36 : ERROR: Error user already exists!
+2018-7-30 17:10:36 : ERROR: Error user already exists!
+2018-7-30 17:10:36 : ERROR: Error user already exists!
+2018-7-30 17:10:37 : ERROR: Error user already exists!
+2018-7-30 17:10:37 : ERROR: Error user already exists!
+2018-7-30 17:10:37 : ERROR: Error user already exists!
+2018-7-30 17:10:37 : ERROR: Error user already exists!
+2018-7-30 17:10:37 : ERROR: Error user already exists!
+2018-7-30 17:10:37 : ERROR: Error user already exists!
+2018-7-30 17:10:37 : ERROR: Error user already exists!
+2018-7-30 17:10:37 : ERROR: Error user already exists!
+2018-7-30 17:10:37 : ERROR: Error user already exists!
+2018-7-30 17:10:37 : ERROR: Error user already exists!
+2018-7-30 17:10:37 : ERROR: Error user already exists!
+2018-7-30 17:10:37 : ERROR: Error user already exists!
+2018-7-30 17:10:37 : ERROR: Error user already exists!
+2018-7-30 17:10:37 : ERROR: Error user already exists!
+2018-7-30 17:10:37 : ERROR: Error user already exists!
+2018-7-30 17:10:37 : ERROR: Error user already exists!
+2018-7-30 17:10:37 : ERROR: Error user already exists!
+2018-7-30 17:10:37 : ERROR: Error user already exists!
+2018-7-30 17:10:37 : ERROR: Error user already exists!
+2018-7-30 17:10:37 : ERROR: Error user already exists!
+2018-7-30 17:10:37 : ERROR: Error user already exists!
+2018-7-30 17:11:03 : INFO: Server started on port: 3000
+2018-7-30 17:11:03 : ERROR: Error user already exists!
+2018-7-30 17:11:03 : ERROR: Error user already exists!
+2018-7-30 17:11:03 : ERROR: Error user already exists!
+2018-7-30 17:11:03 : ERROR: Error user already exists!
+2018-7-30 17:11:03 : ERROR: Error user already exists!
+2018-7-30 17:11:03 : ERROR: Error user already exists!
+2018-7-30 17:11:03 : ERROR: Error user already exists!
+2018-7-30 17:11:03 : ERROR: Error user already exists!
+2018-7-30 17:11:03 : ERROR: Error user already exists!
+2018-7-30 17:11:03 : ERROR: Error user already exists!
+2018-7-30 17:11:03 : ERROR: Error user already exists!
+2018-7-30 17:11:03 : ERROR: Error user already exists!
+2018-7-30 17:11:03 : ERROR: Error user already exists!
+2018-7-30 17:11:03 : ERROR: Error user already exists!
+2018-7-30 17:11:03 : ERROR: Error user already exists!
+2018-7-30 17:11:03 : ERROR: Error user already exists!
+2018-7-30 17:11:03 : ERROR: Error user already exists!
+2018-7-30 17:11:03 : ERROR: Error user already exists!
+2018-7-30 17:11:03 : ERROR: Error user already exists!
+2018-7-30 17:11:03 : ERROR: Error user already exists!
+2018-7-30 17:11:03 : ERROR: Error user already exists!
+2018-7-30 17:11:03 : ERROR: Error user already exists!
+2018-7-30 17:11:03 : ERROR: Error user already exists!
+2018-7-30 17:11:03 : ERROR: Error user already exists!
+2018-7-30 17:11:03 : ERROR: Error user already exists!
+2018-7-30 17:11:03 : ERROR: Error user already exists!
+2018-7-30 17:11:34 : INFO: Server started on port: 3000
+2018-7-30 17:11:34 : ERROR: Error user already exists!
+2018-7-30 17:11:34 : ERROR: Error user already exists!
+2018-7-30 17:11:34 : ERROR: Error user already exists!
+2018-7-30 17:11:34 : ERROR: Error user already exists!
+2018-7-30 17:11:34 : ERROR: Error user already exists!
+2018-7-30 17:11:34 : ERROR: Error user already exists!
+2018-7-30 17:11:34 : ERROR: Error user already exists!
+2018-7-30 17:11:34 : ERROR: Error user already exists!
+2018-7-30 17:11:34 : ERROR: Error user already exists!
+2018-7-30 17:11:34 : ERROR: Error user already exists!
+2018-7-30 17:11:34 : ERROR: Error user already exists!
+2018-7-30 17:11:34 : ERROR: Error user already exists!
+2018-7-30 17:11:34 : ERROR: Error user already exists!
+2018-7-30 17:11:34 : ERROR: Error user already exists!
+2018-7-30 17:11:34 : ERROR: Error user already exists!
+2018-7-30 17:11:34 : ERROR: Error user already exists!
+2018-7-30 17:11:34 : ERROR: Error user already exists!
+2018-7-30 17:11:34 : ERROR: Error user already exists!
+2018-7-30 17:11:34 : ERROR: Error user already exists!
+2018-7-30 17:11:34 : ERROR: Error user already exists!
+2018-7-30 17:11:34 : ERROR: Error user already exists!
+2018-7-30 17:11:34 : ERROR: Error user already exists!
+2018-7-30 17:11:34 : ERROR: Error user already exists!
+2018-7-30 17:11:34 : ERROR: Error user already exists!
+2018-7-30 17:11:34 : ERROR: Error user already exists!
+2018-7-30 17:11:34 : ERROR: Error user already exists!
+2018-7-30 17:11:43 : INFO: Server started on port: 3000
+2018-7-30 17:11:43 : ERROR: Error user already exists!
+2018-7-30 17:11:43 : ERROR: Error user already exists!
+2018-7-30 17:11:43 : ERROR: Error user already exists!
+2018-7-30 17:11:43 : ERROR: Error user already exists!
+2018-7-30 17:11:43 : ERROR: Error user already exists!
+2018-7-30 17:11:43 : ERROR: Error user already exists!
+2018-7-30 17:11:43 : ERROR: Error user already exists!
+2018-7-30 17:11:43 : ERROR: Error user already exists!
+2018-7-30 17:11:43 : ERROR: Error user already exists!
+2018-7-30 17:11:43 : ERROR: Error user already exists!
+2018-7-30 17:11:43 : ERROR: Error user already exists!
+2018-7-30 17:11:43 : ERROR: Error user already exists!
+2018-7-30 17:11:43 : ERROR: Error user already exists!
+2018-7-30 17:11:43 : ERROR: Error user already exists!
+2018-7-30 17:11:43 : ERROR: Error user already exists!
+2018-7-30 17:11:43 : ERROR: Error user already exists!
+2018-7-30 17:11:43 : ERROR: Error user already exists!
+2018-7-30 17:11:43 : ERROR: Error user already exists!
+2018-7-30 17:11:43 : ERROR: Error user already exists!
+2018-7-30 17:11:43 : ERROR: Error user already exists!
+2018-7-30 17:11:43 : ERROR: Error user already exists!
+2018-7-30 17:11:43 : ERROR: Error user already exists!
+2018-7-30 17:11:43 : ERROR: Error user already exists!
+2018-7-30 17:11:43 : ERROR: Error user already exists!
+2018-7-30 17:11:43 : ERROR: Error user already exists!
+2018-7-30 17:11:43 : ERROR: Error user already exists!
+2018-7-30 17:12:13 : INFO: Server started on port: 3000
+2018-7-30 17:12:13 : ERROR: Error user already exists!
+2018-7-30 17:12:13 : ERROR: Error user already exists!
+2018-7-30 17:12:13 : ERROR: Error user already exists!
+2018-7-30 17:12:13 : ERROR: Error user already exists!
+2018-7-30 17:12:13 : ERROR: Error user already exists!
+2018-7-30 17:12:13 : ERROR: Error user already exists!
+2018-7-30 17:12:13 : ERROR: Error user already exists!
+2018-7-30 17:12:13 : ERROR: Error user already exists!
+2018-7-30 17:12:13 : ERROR: Error user already exists!
+2018-7-30 17:12:13 : ERROR: Error user already exists!
+2018-7-30 17:12:13 : ERROR: Error user already exists!
+2018-7-30 17:12:13 : ERROR: Error user already exists!
+2018-7-30 17:12:13 : ERROR: Error user already exists!
+2018-7-30 17:12:13 : ERROR: Error user already exists!
+2018-7-30 17:12:13 : ERROR: Error user already exists!
+2018-7-30 17:12:13 : ERROR: Error user already exists!
+2018-7-30 17:12:13 : ERROR: Error user already exists!
+2018-7-30 17:12:13 : ERROR: Error user already exists!
+2018-7-30 17:12:13 : ERROR: Error user already exists!
+2018-7-30 17:12:13 : ERROR: Error user already exists!
+2018-7-30 17:12:13 : ERROR: Error user already exists!
+2018-7-30 17:12:13 : ERROR: Error user already exists!
+2018-7-30 17:12:13 : ERROR: Error user already exists!
+2018-7-30 17:12:13 : ERROR: Error user already exists!
+2018-7-30 17:12:13 : ERROR: Error user already exists!
+2018-7-30 17:12:13 : ERROR: Error user already exists!
+2018-7-30 17:12:34 : INFO: Server started on port: 3000
+2018-7-30 17:12:34 : ERROR: Error user already exists!
+2018-7-30 17:12:34 : ERROR: Error user already exists!
+2018-7-30 17:12:34 : ERROR: Error user already exists!
+2018-7-30 17:12:34 : ERROR: Error user already exists!
+2018-7-30 17:12:34 : ERROR: Error user already exists!
+2018-7-30 17:12:34 : ERROR: Error user already exists!
+2018-7-30 17:12:34 : ERROR: Error user already exists!
+2018-7-30 17:12:34 : ERROR: Error user already exists!
+2018-7-30 17:12:34 : ERROR: Error user already exists!
+2018-7-30 17:12:34 : ERROR: Error user already exists!
+2018-7-30 17:12:34 : ERROR: Error user already exists!
+2018-7-30 17:12:34 : ERROR: Error user already exists!
+2018-7-30 17:12:34 : ERROR: Error user already exists!
+2018-7-30 17:12:34 : ERROR: Error user already exists!
+2018-7-30 17:12:34 : ERROR: Error user already exists!
+2018-7-30 17:12:34 : ERROR: Error user already exists!
+2018-7-30 17:12:34 : ERROR: Error user already exists!
+2018-7-30 17:12:34 : ERROR: Error user already exists!
+2018-7-30 17:12:34 : ERROR: Error user already exists!
+2018-7-30 17:12:34 : ERROR: Error user already exists!
+2018-7-30 17:12:34 : ERROR: Error user already exists!
+2018-7-30 17:12:34 : ERROR: Error user already exists!
+2018-7-30 17:12:34 : ERROR: Error user already exists!
+2018-7-30 17:12:34 : ERROR: Error user already exists!
+2018-7-30 17:12:34 : ERROR: Error user already exists!
+2018-7-30 17:12:34 : ERROR: Error user already exists!
+2018-7-30 17:12:41 : INFO: Server started on port: 3000
+2018-7-30 17:12:41 : ERROR: Error user already exists!
+2018-7-30 17:12:41 : ERROR: Error user already exists!
+2018-7-30 17:12:41 : ERROR: Error user already exists!
+2018-7-30 17:12:41 : ERROR: Error user already exists!
+2018-7-30 17:12:41 : ERROR: Error user already exists!
+2018-7-30 17:12:41 : ERROR: Error user already exists!
+2018-7-30 17:12:41 : ERROR: Error user already exists!
+2018-7-30 17:12:41 : ERROR: Error user already exists!
+2018-7-30 17:12:41 : ERROR: Error user already exists!
+2018-7-30 17:12:41 : ERROR: Error user already exists!
+2018-7-30 17:12:41 : ERROR: Error user already exists!
+2018-7-30 17:12:41 : ERROR: Error user already exists!
+2018-7-30 17:12:41 : ERROR: Error user already exists!
+2018-7-30 17:12:41 : ERROR: Error user already exists!
+2018-7-30 17:12:41 : ERROR: Error user already exists!
+2018-7-30 17:12:41 : ERROR: Error user already exists!
+2018-7-30 17:12:41 : ERROR: Error user already exists!
+2018-7-30 17:12:41 : ERROR: Error user already exists!
+2018-7-30 17:12:41 : ERROR: Error user already exists!
+2018-7-30 17:12:41 : ERROR: Error user already exists!
+2018-7-30 17:12:41 : ERROR: Error user already exists!
+2018-7-30 17:12:41 : ERROR: Error user already exists!
+2018-7-30 17:12:41 : ERROR: Error user already exists!
+2018-7-30 17:12:41 : ERROR: Error user already exists!
+2018-7-30 17:12:41 : ERROR: Error user already exists!
+2018-7-30 17:12:41 : ERROR: Error user already exists!
+2018-7-30 17:12:44 : INFO: Server started on port: 3000
+2018-7-30 17:12:44 : ERROR: Error user already exists!
+2018-7-30 17:12:44 : ERROR: Error user already exists!
+2018-7-30 17:12:44 : ERROR: Error user already exists!
+2018-7-30 17:12:44 : ERROR: Error user already exists!
+2018-7-30 17:12:44 : ERROR: Error user already exists!
+2018-7-30 17:12:44 : ERROR: Error user already exists!
+2018-7-30 17:12:44 : ERROR: Error user already exists!
+2018-7-30 17:12:44 : ERROR: Error user already exists!
+2018-7-30 17:12:44 : ERROR: Error user already exists!
+2018-7-30 17:12:44 : ERROR: Error user already exists!
+2018-7-30 17:12:44 : ERROR: Error user already exists!
+2018-7-30 17:12:44 : ERROR: Error user already exists!
+2018-7-30 17:12:44 : ERROR: Error user already exists!
+2018-7-30 17:12:44 : ERROR: Error user already exists!
+2018-7-30 17:12:44 : ERROR: Error user already exists!
+2018-7-30 17:12:44 : ERROR: Error user already exists!
+2018-7-30 17:12:44 : ERROR: Error user already exists!
+2018-7-30 17:12:44 : ERROR: Error user already exists!
+2018-7-30 17:12:44 : ERROR: Error user already exists!
+2018-7-30 17:12:44 : ERROR: Error user already exists!
+2018-7-30 17:12:44 : ERROR: Error user already exists!
+2018-7-30 17:12:44 : ERROR: Error user already exists!
+2018-7-30 17:12:44 : ERROR: Error user already exists!
+2018-7-30 17:12:44 : ERROR: Error user already exists!
+2018-7-30 17:12:44 : ERROR: Error user already exists!
+2018-7-30 17:12:44 : ERROR: Error user already exists!
+2018-7-30 17:12:52 : INFO: Server started on port: 3000
+2018-7-30 17:13:04 : INFO: Server started on port: 3000
+2018-7-30 17:13:07 : INFO: Server started on port: 3000
+2018-7-30 17:13:13 : INFO: Server started on port: 3000
+2018-7-30 17:13:18 : INFO: Server started on port: 3000
+2018-7-30 17:13:23 : INFO: Server started on port: 3000
+2018-7-30 17:13:57 : INFO: Server started on port: 3000
+2018-7-30 17:14:17 : INFO: Server started on port: 3000
+2018-7-30 17:15:22 : INFO: Server started on port: 3000
+2018-7-30 17:15:35 : INFO: Server started on port: 3000
+2018-7-30 17:15:54 : INFO: Server started on port: 3000
+2018-7-30 17:16:04 : INFO: Server started on port: 3000
+2018-7-30 17:16:06 : INFO: Server started on port: 3000
+2018-7-30 17:16:15 : INFO: Server started on port: 3000
+2018-7-30 17:17:50 : INFO: Server started on port: 3000
+2018-7-30 17:18:03 : INFO: Server started on port: 3000
+2018-7-30 17:18:10 : INFO: Server started on port: 3000
+2018-7-30 17:18:36 : INFO: Server started on port: 3000
+2018-7-30 17:21:45 : INFO: Server started on port: 3000
+2018-7-30 17:23:15 : INFO: Server started on port: 3000
+2018-7-30 17:23:19 : INFO: Server started on port: 3000
+2018-7-30 17:24:51 : INFO: Server started on port: 3000
+2018-7-30 17:25:06 : INFO: Server started on port: 3000
+2018-7-30 17:25:15 : INFO: Server started on port: 3000
+2018-7-30 17:25:32 : INFO: Server started on port: 3000
+2018-7-30 17:25:34 : INFO: Server started on port: 3000
+2018-7-30 17:26:00 : INFO: Server started on port: 3000
+2018-7-30 17:30:44 : INFO: Server started on port: 3000
+2018-7-30 17:32:07 : INFO: Server started on port: 3000
+2018-7-30 17:32:20 : INFO: Server started on port: 3000
+2018-7-30 17:32:24 : INFO: Server started on port: 3000
+2018-7-30 17:32:41 : INFO: Server started on port: 3000
+2018-7-30 17:32:43 : INFO: Server started on port: 3000
+2018-7-30 17:32:49 : INFO: Server started on port: 3000
+2018-7-30 17:33:07 : INFO: Server started on port: 3000
+2018-7-30 17:33:20 : INFO: Server started on port: 3000
+2018-7-30 17:33:40 : INFO: Server started on port: 3000
+2018-7-30 17:34:15 : INFO: Server started on port: 3000
+2018-7-30 17:34:27 : INFO: Server started on port: 3000
+2018-7-30 17:34:38 : INFO: Server started on port: 3000
+2018-7-30 17:35:08 : INFO: Server started on port: 3000
+2018-7-30 17:35:13 : INFO: Server started on port: 3000
+2018-7-30 17:35:18 : INFO: Server started on port: 3000
+2018-7-30 17:35:23 : INFO: Server started on port: 3000
+2018-7-30 17:35:58 : INFO: Server started on port: 3000
+2018-7-30 17:36:16 : INFO: Server started on port: 3000
+2018-7-30 17:37:02 : INFO: Server started on port: 3000
+2018-7-30 17:37:12 : INFO: Server started on port: 3000
+2018-7-30 17:37:15 : INFO: Server started on port: 3000
+2018-7-30 17:37:24 : INFO: Server started on port: 3000
+2018-7-30 17:37:35 : INFO: Server started on port: 3000
+2018-7-30 17:37:49 : INFO: Server started on port: 3000
+2018-7-30 17:38:04 : INFO: Server started on port: 3000
+2018-7-30 17:38:51 : INFO: Server started on port: 3000
+2018-7-30 17:41:48 : INFO: Server started on port: 3000
+2018-7-30 18:31:07 : INFO: Server started on port: 3000
+2018-7-30 18:31:18 : INFO: Server started on port: 3000
+2018-7-30 18:32:14 : INFO: Server started on port: 3000
+2018-7-30 18:32:31 : INFO: Server started on port: 3000
+2018-7-30 18:33:00 : INFO: Server started on port: 3000
+2018-7-30 18:33:28 : INFO: Server started on port: 3000
+2018-7-30 18:33:51 : INFO: Server started on port: 3000
+2018-7-30 18:37:12 : INFO: Server started on port: 3000
+2018-7-30 18:37:31 : INFO: Server started on port: 3000
+2018-7-30 18:38:27 : INFO: Server started on port: 3000
+2018-7-30 18:38:31 : INFO: Server started on port: 3000
+2018-7-30 18:40:42 : INFO: Server started on port: 3000
+2018-7-30 18:40:52 : INFO: Server started on port: 3000
+2018-7-30 18:41:09 : INFO: Server started on port: 3000
+2018-7-30 18:41:49 : INFO: Server started on port: 3000
+2018-7-30 18:42:27 : INFO: Server started on port: 3000
+2018-7-30 18:42:41 : INFO: Server started on port: 3000
+2018-7-30 18:42:41 : ERROR: Error user already exists!
+2018-7-30 18:42:41 : ERROR: Error user already exists!
+2018-7-30 18:42:41 : ERROR: Error user already exists!
+2018-7-30 18:42:41 : ERROR: Error user already exists!
+2018-7-30 18:42:41 : ERROR: Error user already exists!
+2018-7-30 18:42:41 : ERROR: Error user already exists!
+2018-7-30 18:42:41 : ERROR: Error user already exists!
+2018-7-30 18:42:41 : ERROR: Error user already exists!
+2018-7-30 18:42:41 : ERROR: Error user already exists!
+2018-7-30 18:42:41 : ERROR: Error user already exists!
+2018-7-30 18:42:41 : ERROR: Error user already exists!
+2018-7-30 18:42:41 : ERROR: Error user already exists!
+2018-7-30 18:42:41 : ERROR: Error user already exists!
+2018-7-30 18:42:41 : ERROR: Error user already exists!
+2018-7-30 18:42:41 : ERROR: Error user already exists!
+2018-7-30 18:42:41 : ERROR: Error user already exists!
+2018-7-30 18:42:41 : ERROR: Error user already exists!
+2018-7-30 18:42:41 : ERROR: Error user already exists!
+2018-7-30 18:42:41 : ERROR: Error user already exists!
+2018-7-30 18:42:41 : ERROR: Error user already exists!
+2018-7-30 18:42:41 : ERROR: Error user already exists!
+2018-7-30 18:42:41 : ERROR: Error user already exists!
+2018-7-30 18:42:41 : ERROR: Error user already exists!
+2018-7-30 18:42:41 : ERROR: Error user already exists!
+2018-7-30 18:42:41 : ERROR: Error user already exists!
+2018-7-30 18:42:41 : ERROR: Error user already exists!
+2018-7-30 18:42:54 : INFO: Server started on port: 3000
+2018-7-30 18:42:54 : ERROR: Error user already exists!
+2018-7-30 18:42:54 : ERROR: Error user already exists!
+2018-7-30 18:42:54 : ERROR: Error user already exists!
+2018-7-30 18:42:54 : ERROR: Error user already exists!
+2018-7-30 18:42:54 : ERROR: Error user already exists!
+2018-7-30 18:42:54 : ERROR: Error user already exists!
+2018-7-30 18:42:54 : ERROR: Error user already exists!
+2018-7-30 18:42:54 : ERROR: Error user already exists!
+2018-7-30 18:42:54 : ERROR: Error user already exists!
+2018-7-30 18:42:54 : ERROR: Error user already exists!
+2018-7-30 18:42:54 : ERROR: Error user already exists!
+2018-7-30 18:42:54 : ERROR: Error user already exists!
+2018-7-30 18:42:54 : ERROR: Error user already exists!
+2018-7-30 18:42:54 : ERROR: Error user already exists!
+2018-7-30 18:42:54 : ERROR: Error user already exists!
+2018-7-30 18:42:54 : ERROR: Error user already exists!
+2018-7-30 18:42:54 : ERROR: Error user already exists!
+2018-7-30 18:42:54 : ERROR: Error user already exists!
+2018-7-30 18:42:54 : ERROR: Error user already exists!
+2018-7-30 18:42:54 : ERROR: Error user already exists!
+2018-7-30 18:42:54 : ERROR: Error user already exists!
+2018-7-30 18:42:54 : ERROR: Error user already exists!
+2018-7-30 18:42:54 : ERROR: Error user already exists!
+2018-7-30 18:42:54 : ERROR: Error user already exists!
+2018-7-30 18:42:54 : ERROR: Error user already exists!
+2018-7-30 18:42:54 : ERROR: Error user already exists!
+2018-7-30 18:43:31 : INFO: Server started on port: 3000
+2018-7-30 18:43:31 : ERROR: Error user already exists!
+2018-7-30 18:43:31 : ERROR: Error user already exists!
+2018-7-30 18:43:31 : ERROR: Error user already exists!
+2018-7-30 18:43:31 : ERROR: Error user already exists!
+2018-7-30 18:43:31 : ERROR: Error user already exists!
+2018-7-30 18:43:31 : ERROR: Error user already exists!
+2018-7-30 18:43:31 : ERROR: Error user already exists!
+2018-7-30 18:43:31 : ERROR: Error user already exists!
+2018-7-30 18:43:31 : ERROR: Error user already exists!
+2018-7-30 18:43:31 : ERROR: Error user already exists!
+2018-7-30 18:43:31 : ERROR: Error user already exists!
+2018-7-30 18:43:31 : ERROR: Error user already exists!
+2018-7-30 18:43:31 : ERROR: Error user already exists!
+2018-7-30 18:43:31 : ERROR: Error user already exists!
+2018-7-30 18:43:31 : ERROR: Error user already exists!
+2018-7-30 18:43:31 : ERROR: Error user already exists!
+2018-7-30 18:43:31 : ERROR: Error user already exists!
+2018-7-30 18:43:31 : ERROR: Error user already exists!
+2018-7-30 18:43:31 : ERROR: Error user already exists!
+2018-7-30 18:43:31 : ERROR: Error user already exists!
+2018-7-30 18:43:31 : ERROR: Error user already exists!
+2018-7-30 18:43:31 : ERROR: Error user already exists!
+2018-7-30 18:43:31 : ERROR: Error user already exists!
+2018-7-30 18:43:31 : ERROR: Error user already exists!
+2018-7-30 18:43:31 : ERROR: Error user already exists!
+2018-7-30 18:43:31 : ERROR: Error user already exists!
+2018-7-30 18:43:45 : INFO: Server started on port: 3000
+2018-7-30 18:43:45 : ERROR: Error user already exists!
+2018-7-30 18:43:45 : ERROR: Error user already exists!
+2018-7-30 18:43:45 : ERROR: Error user already exists!
+2018-7-30 18:43:45 : ERROR: Error user already exists!
+2018-7-30 18:43:45 : ERROR: Error user already exists!
+2018-7-30 18:43:45 : ERROR: Error user already exists!
+2018-7-30 18:43:45 : ERROR: Error user already exists!
+2018-7-30 18:43:45 : ERROR: Error user already exists!
+2018-7-30 18:43:45 : ERROR: Error user already exists!
+2018-7-30 18:43:45 : ERROR: Error user already exists!
+2018-7-30 18:43:45 : ERROR: Error user already exists!
+2018-7-30 18:43:45 : ERROR: Error user already exists!
+2018-7-30 18:43:45 : ERROR: Error user already exists!
+2018-7-30 18:43:45 : ERROR: Error user already exists!
+2018-7-30 18:43:45 : ERROR: Error user already exists!
+2018-7-30 18:43:45 : ERROR: Error user already exists!
+2018-7-30 18:43:45 : ERROR: Error user already exists!
+2018-7-30 18:43:45 : ERROR: Error user already exists!
+2018-7-30 18:43:45 : ERROR: Error user already exists!
+2018-7-30 18:43:45 : ERROR: Error user already exists!
+2018-7-30 18:43:45 : ERROR: Error user already exists!
+2018-7-30 18:43:45 : ERROR: Error user already exists!
+2018-7-30 18:43:45 : ERROR: Error user already exists!
+2018-7-30 18:43:45 : ERROR: Error user already exists!
+2018-7-30 18:43:45 : ERROR: Error user already exists!
+2018-7-30 18:43:45 : ERROR: Error user already exists!
+2018-7-30 18:44:04 : INFO: Server started on port: 3000
+2018-7-30 18:44:04 : ERROR: Error user already exists!
+2018-7-30 18:44:04 : ERROR: Error user already exists!
+2018-7-30 18:44:04 : ERROR: Error user already exists!
+2018-7-30 18:44:04 : ERROR: Error user already exists!
+2018-7-30 18:44:04 : ERROR: Error user already exists!
+2018-7-30 18:44:04 : ERROR: Error user already exists!
+2018-7-30 18:44:04 : ERROR: Error user already exists!
+2018-7-30 18:44:04 : ERROR: Error user already exists!
+2018-7-30 18:44:04 : ERROR: Error user already exists!
+2018-7-30 18:44:04 : ERROR: Error user already exists!
+2018-7-30 18:44:04 : ERROR: Error user already exists!
+2018-7-30 18:44:04 : ERROR: Error user already exists!
+2018-7-30 18:44:04 : ERROR: Error user already exists!
+2018-7-30 18:44:04 : ERROR: Error user already exists!
+2018-7-30 18:44:04 : ERROR: Error user already exists!
+2018-7-30 18:44:04 : ERROR: Error user already exists!
+2018-7-30 18:44:04 : ERROR: Error user already exists!
+2018-7-30 18:44:04 : ERROR: Error user already exists!
+2018-7-30 18:44:04 : ERROR: Error user already exists!
+2018-7-30 18:44:04 : ERROR: Error user already exists!
+2018-7-30 18:44:04 : ERROR: Error user already exists!
+2018-7-30 18:44:04 : ERROR: Error user already exists!
+2018-7-30 18:44:04 : ERROR: Error user already exists!
+2018-7-30 18:44:04 : ERROR: Error user already exists!
+2018-7-30 18:44:04 : ERROR: Error user already exists!
+2018-7-30 18:44:04 : ERROR: Error user already exists!
+2018-7-30 18:44:34 : INFO: Server started on port: 3000
+2018-7-30 18:44:35 : ERROR: Error user already exists!
+2018-7-30 18:44:35 : ERROR: Error user already exists!
+2018-7-30 18:44:35 : ERROR: Error user already exists!
+2018-7-30 18:44:35 : ERROR: Error user already exists!
+2018-7-30 18:44:35 : ERROR: Error user already exists!
+2018-7-30 18:44:35 : ERROR: Error user already exists!
+2018-7-30 18:44:35 : ERROR: Error user already exists!
+2018-7-30 18:44:35 : ERROR: Error user already exists!
+2018-7-30 18:44:35 : ERROR: Error user already exists!
+2018-7-30 18:44:35 : ERROR: Error user already exists!
+2018-7-30 18:44:35 : ERROR: Error user already exists!
+2018-7-30 18:44:35 : ERROR: Error user already exists!
+2018-7-30 18:44:35 : ERROR: Error user already exists!
+2018-7-30 18:44:35 : ERROR: Error user already exists!
+2018-7-30 18:44:35 : ERROR: Error user already exists!
+2018-7-30 18:44:35 : ERROR: Error user already exists!
+2018-7-30 18:44:35 : ERROR: Error user already exists!
+2018-7-30 18:44:35 : ERROR: Error user already exists!
+2018-7-30 18:44:35 : ERROR: Error user already exists!
+2018-7-30 18:44:35 : ERROR: Error user already exists!
+2018-7-30 18:44:35 : ERROR: Error user already exists!
+2018-7-30 18:44:35 : ERROR: Error user already exists!
+2018-7-30 18:44:35 : ERROR: Error user already exists!
+2018-7-30 18:44:35 : ERROR: Error user already exists!
+2018-7-30 18:44:35 : ERROR: Error user already exists!
+2018-7-30 18:44:35 : ERROR: Error user already exists!
+2018-7-30 18:44:44 : INFO: Server started on port: 3000
+2018-7-30 18:44:44 : ERROR: Error user already exists!
+2018-7-30 18:44:44 : ERROR: Error user already exists!
+2018-7-30 18:44:44 : ERROR: Error user already exists!
+2018-7-30 18:44:44 : ERROR: Error user already exists!
+2018-7-30 18:44:44 : ERROR: Error user already exists!
+2018-7-30 18:44:44 : ERROR: Error user already exists!
+2018-7-30 18:44:44 : ERROR: Error user already exists!
+2018-7-30 18:44:44 : ERROR: Error user already exists!
+2018-7-30 18:44:44 : ERROR: Error user already exists!
+2018-7-30 18:44:44 : ERROR: Error user already exists!
+2018-7-30 18:44:44 : ERROR: Error user already exists!
+2018-7-30 18:44:44 : ERROR: Error user already exists!
+2018-7-30 18:44:44 : ERROR: Error user already exists!
+2018-7-30 18:44:44 : ERROR: Error user already exists!
+2018-7-30 18:44:44 : ERROR: Error user already exists!
+2018-7-30 18:44:44 : ERROR: Error user already exists!
+2018-7-30 18:44:44 : ERROR: Error user already exists!
+2018-7-30 18:44:44 : ERROR: Error user already exists!
+2018-7-30 18:44:44 : ERROR: Error user already exists!
+2018-7-30 18:44:44 : ERROR: Error user already exists!
+2018-7-30 18:44:44 : ERROR: Error user already exists!
+2018-7-30 18:44:44 : ERROR: Error user already exists!
+2018-7-30 18:44:44 : ERROR: Error user already exists!
+2018-7-30 18:44:44 : ERROR: Error user already exists!
+2018-7-30 18:44:44 : ERROR: Error user already exists!
+2018-7-30 18:44:44 : ERROR: Error user already exists!
+2018-7-30 18:44:47 : INFO: Server started on port: 3000
+2018-7-30 18:44:47 : ERROR: Error user already exists!
+2018-7-30 18:44:47 : ERROR: Error user already exists!
+2018-7-30 18:44:47 : ERROR: Error user already exists!
+2018-7-30 18:44:47 : ERROR: Error user already exists!
+2018-7-30 18:44:47 : ERROR: Error user already exists!
+2018-7-30 18:44:47 : ERROR: Error user already exists!
+2018-7-30 18:44:47 : ERROR: Error user already exists!
+2018-7-30 18:44:47 : ERROR: Error user already exists!
+2018-7-30 18:44:47 : ERROR: Error user already exists!
+2018-7-30 18:44:47 : ERROR: Error user already exists!
+2018-7-30 18:44:47 : ERROR: Error user already exists!
+2018-7-30 18:44:47 : ERROR: Error user already exists!
+2018-7-30 18:44:47 : ERROR: Error user already exists!
+2018-7-30 18:44:47 : ERROR: Error user already exists!
+2018-7-30 18:44:47 : ERROR: Error user already exists!
+2018-7-30 18:44:47 : ERROR: Error user already exists!
+2018-7-30 18:44:47 : ERROR: Error user already exists!
+2018-7-30 18:44:47 : ERROR: Error user already exists!
+2018-7-30 18:44:47 : ERROR: Error user already exists!
+2018-7-30 18:44:47 : ERROR: Error user already exists!
+2018-7-30 18:44:47 : ERROR: Error user already exists!
+2018-7-30 18:44:47 : ERROR: Error user already exists!
+2018-7-30 18:44:47 : ERROR: Error user already exists!
+2018-7-30 18:44:47 : ERROR: Error user already exists!
+2018-7-30 18:44:47 : ERROR: Error user already exists!
+2018-7-30 18:44:47 : ERROR: Error user already exists!
+2018-7-30 18:44:58 : INFO: Server started on port: 3000
+2018-7-30 18:44:58 : ERROR: Error user already exists!
+2018-7-30 18:44:58 : ERROR: Error user already exists!
+2018-7-30 18:44:58 : ERROR: Error user already exists!
+2018-7-30 18:44:58 : ERROR: Error user already exists!
+2018-7-30 18:44:58 : ERROR: Error user already exists!
+2018-7-30 18:44:58 : ERROR: Error user already exists!
+2018-7-30 18:44:58 : ERROR: Error user already exists!
+2018-7-30 18:44:58 : ERROR: Error user already exists!
+2018-7-30 18:44:58 : ERROR: Error user already exists!
+2018-7-30 18:44:58 : ERROR: Error user already exists!
+2018-7-30 18:44:58 : ERROR: Error user already exists!
+2018-7-30 18:44:58 : ERROR: Error user already exists!
+2018-7-30 18:44:58 : ERROR: Error user already exists!
+2018-7-30 18:44:58 : ERROR: Error user already exists!
+2018-7-30 18:44:58 : ERROR: Error user already exists!
+2018-7-30 18:44:58 : ERROR: Error user already exists!
+2018-7-30 18:44:58 : ERROR: Error user already exists!
+2018-7-30 18:44:58 : ERROR: Error user already exists!
+2018-7-30 18:44:58 : ERROR: Error user already exists!
+2018-7-30 18:44:58 : ERROR: Error user already exists!
+2018-7-30 18:44:58 : ERROR: Error user already exists!
+2018-7-30 18:44:58 : ERROR: Error user already exists!
+2018-7-30 18:44:58 : ERROR: Error user already exists!
+2018-7-30 18:44:58 : ERROR: Error user already exists!
+2018-7-30 18:44:58 : ERROR: Error user already exists!
+2018-7-30 18:44:58 : ERROR: Error user already exists!
+2018-7-30 18:45:27 : INFO: Server started on port: 3000
+2018-7-30 18:45:27 : ERROR: Error: SQLITE_ERROR: near "=": syntax error
+2018-7-30 18:45:31 : INFO: Server started on port: 3000
+2018-7-30 18:45:31 : ERROR: Error user already exists!
+2018-7-30 18:45:56 : INFO: Server started on port: 3000
+2018-7-30 18:45:56 : ERROR: Error user already exists!
+2018-7-30 18:46:46 : INFO: Server started on port: 3000
+2018-7-30 18:46:46 : ERROR: Error user already exists!
+2018-7-30 18:46:54 : INFO: Server started on port: 3000
+2018-7-30 18:46:54 : ERROR: Error user already exists!
+2018-7-30 18:47:39 : INFO: Server started on port: 3000
+2018-7-30 18:47:39 : ERROR: Error user already exists!
+2018-7-30 18:47:46 : INFO: Server started on port: 3000
+2018-7-30 18:47:46 : ERROR: Error user already exists!
+2018-7-30 18:49:59 : INFO: Server started on port: 3000
+2018-7-30 18:49:59 : ERROR: Error user already exists!
+2018-7-30 18:51:33 : INFO: Server started on port: 3000
+2018-7-30 18:52:26 : INFO: Server started on port: 3000
+2018-7-30 18:52:56 : INFO: Server started on port: 3000
+2018-7-30 18:53:16 : INFO: Server started on port: 3000
+2018-7-30 18:54:04 : INFO: Server started on port: 3000
+2018-7-30 18:55:01 : INFO: Server started on port: 3000
+2018-7-30 18:55:23 : INFO: Server started on port: 3000
+2018-7-30 18:55:41 : INFO: Server started on port: 3000
+2018-7-30 18:56:04 : INFO: Server started on port: 3000
+2018-7-30 18:56:17 : INFO: Server started on port: 3000
+2018-7-30 18:56:25 : INFO: Server started on port: 3000
+2018-7-30 19:32:06 : INFO: Server started on port: 3000
+2018-7-30 19:32:12 : INFO: Server started on port: 3000
+2018-7-30 21:16:43 : INFO: Server started on port: 3000
+2018-7-30 21:23:26 : INFO: Server started on port: 3000
+2018-7-30 21:30:58 : INFO: Server started on port: 3000
+2018-7-30 21:31:21 : INFO: Server started on port: 3000
+2018-7-30 21:33:02 : INFO: Server started on port: 3000
+2018-7-30 21:33:11 : INFO: Server started on port: 3000
+2018-7-30 21:33:28 : INFO: Server started on port: 3000
+2018-7-30 21:33:48 : INFO: Server started on port: 3000
+2018-7-30 21:34:01 : INFO: Server started on port: 3000
+2018-7-30 21:34:08 : INFO: Server started on port: 3000
+2018-7-30 21:35:22 : INFO: Server started on port: 3000
+2018-7-30 21:35:42 : INFO: Server started on port: 3000
+2018-7-30 21:35:49 : INFO: Server started on port: 3000
+2018-7-30 21:35:53 : INFO: Server started on port: 3000
+2018-7-30 21:36:24 : INFO: Server started on port: 3000
+2018-7-30 21:36:37 : INFO: Server started on port: 3000
+2018-7-30 21:36:52 : INFO: Server started on port: 3000
+2018-7-30 21:37:00 : INFO: Server started on port: 3000
+2018-7-30 21:37:13 : INFO: Server started on port: 3000
+2018-7-30 21:37:23 : INFO: Server started on port: 3000
+2018-7-30 21:37:30 : INFO: Server started on port: 3000
+2018-7-30 21:37:52 : INFO: Server started on port: 3000
+2018-7-30 21:44:27 : INFO: Server started on port: 3000
+2018-7-30 21:45:22 : INFO: Server started on port: 3000
+2018-7-30 21:45:40 : INFO: Server started on port: 3000
+2018-7-30 21:45:55 : INFO: Server started on port: 3000
+2018-7-30 21:47:44 : INFO: Server started on port: 3000
+2018-7-30 21:48:15 : INFO: Server started on port: 3000
+2018-7-30 21:49:49 : INFO: Server started on port: 3000
+2018-7-30 21:49:54 : INFO: Server started on port: 3000
+2018-7-30 21:50:07 : INFO: Server started on port: 3000
+2018-7-30 21:50:18 : INFO: Server started on port: 3000
+2018-7-30 21:50:25 : INFO: Server started on port: 3000
+2018-7-30 21:53:07 : INFO: Server started on port: 3000
+2018-7-30 21:53:53 : INFO: Server started on port: 3000
+2018-7-30 21:53:53 : INFO: Added new user
+2018-7-30 21:54:18 : INFO: Server started on port: 3000
+2018-7-30 21:54:18 : ERROR: Error user already exists!
+2018-7-30 21:54:22 : INFO: Server started on port: 3000
+2018-7-30 21:54:22 : ERROR: Error user already exists!
+2018-7-30 21:55:48 : INFO: Server started on port: 3000
+2018-7-30 21:55:48 : ERROR: Error user already exists!
+2018-7-30 21:56:37 : INFO: Server started on port: 3000
+2018-7-30 21:56:37 : ERROR: Error user already exists!
+2018-7-30 21:56:38 : INFO: Server started on port: 3000
+2018-7-30 21:56:38 : ERROR: Error user already exists!
+2018-7-30 21:56:50 : INFO: Server started on port: 3000
+2018-7-30 21:56:50 : ERROR: Error user already exists!
+2018-7-30 21:56:53 : INFO: Server started on port: 3000
+2018-7-30 21:56:53 : ERROR: Error user already exists!
+2018-7-30 21:57:14 : INFO: Server started on port: 3000
+2018-7-30 21:57:14 : ERROR: Error user already exists!
+2018-7-30 21:57:21 : INFO: Server started on port: 3000
+2018-7-30 21:57:21 : ERROR: Error user already exists!
+2018-7-30 21:57:41 : INFO: Server started on port: 3000
+2018-7-30 21:57:41 : ERROR: Error user already exists!
+2018-7-30 21:57:45 : INFO: Server started on port: 3000
+2018-7-30 21:57:45 : ERROR: Error user already exists!
+2018-7-30 21:58:02 : INFO: Server started on port: 3000
+2018-7-30 21:58:02 : ERROR: Error user already exists!
+2018-7-30 21:58:41 : INFO: Server started on port: 3000
+2018-7-30 21:58:41 : ERROR: Error user already exists!
+2018-7-30 21:58:54 : INFO: Server started on port: 3000
+2018-7-30 21:58:54 : ERROR: Error user already exists!
