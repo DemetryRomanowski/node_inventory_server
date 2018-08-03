@@ -84,10 +84,11 @@ app.post('/login', (req, res) => {
                 users_logged_in.push({user: row, token: req.ip, time: new Date(Date.now())});
                 res.redirect("/dashboard");
             } else {
-                res.render('login', {message : {error : true}});
+                res.render('login', {message : {error : true, data : "Incorrect Username or Password"}});
             }
         }, (err) => {
             Debug.log(ErrorLevel.ERR, err.message);
+            res.render('login', {message : {error : true, data : err.message}});
         });
     else {
         res.render('errors/400');

@@ -10,11 +10,8 @@ block body
 
                 if message
                     if message.error
-                        div.alert.alert-danger Incorrect username or password
+                        div.alert.alert-danger !{message.data}
 
-                    else
-                        if message.success
-                            div.alert.alert-success You are now connected
 
                 div.form-group
                     label Username:
