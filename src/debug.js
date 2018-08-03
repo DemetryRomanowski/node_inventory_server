@@ -57,7 +57,7 @@ module.exports = {
     ErrorLevel : {
         DEBUG : {
             data: "DEBUG: ",
-            fg_color: Colors.FgYellow,
+            fg_color: Colors.FgCyan,
             bg_color: Colors.Empty
         },
         INFO : {
@@ -67,7 +67,7 @@ module.exports = {
         },
         WARN : {
             data: "WARNING: ",
-            fg_color: Colors.FgRed,
+            fg_color: Colors.FgYellow,
             bg_color: Colors.Empty
         },
         ERR : {
@@ -114,7 +114,7 @@ module.exports = {
             });
 
         //Print the log to the console
-        console.log(err_level.fg_color + err_level.bg_color + '%s' + Colors.Reset, new Date(Date.now()).toLocaleString() + " : " + err_level.data + string);
+        console.log(err_level.fg_color + err_level.bg_color + '%s' + Colors.Reset, new Date(Date.now()).toLocaleString() + " : " + err_level.data + string.toString());
     }
 };
 //#endregion

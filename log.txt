@@ -994,3 +994,347 @@
 2018-7-30 21:58:41 : ERROR: Error user already exists!
 2018-7-30 21:58:54 : INFO: Server started on port: 3000
 2018-7-30 21:58:54 : ERROR: Error user already exists!
+2018-7-30 22:15:30 : INFO: Server started on port: 3000
+2018-7-30 22:15:30 : INFO: Added new user
+2018-7-30 22:15:58 : INFO: Server started on port: 3000
+2018-7-30 22:15:58 : ERROR: Error user already exists!
+2018-7-30 22:16:41 : INFO: Server started on port: 3000
+2018-7-30 22:16:41 : ERROR: Error user already exists!
+2018-7-30 22:16:45 : INFO: Server started on port: 3000
+2018-7-30 22:16:45 : ERROR: Error user already exists!
+2018-7-30 22:16:51 : INFO: Server started on port: 3000
+2018-7-30 22:16:51 : ERROR: Error user already exists!
+2018-7-30 22:16:55 : INFO: Server started on port: 3000
+2018-7-30 22:16:55 : ERROR: Error user already exists!
+2018-7-30 22:17:04 : INFO: Server started on port: 3000
+2018-7-30 22:17:04 : ERROR: Error user already exists!
+2018-7-30 22:17:27 : INFO: Server started on port: 3000
+2018-7-30 22:17:27 : ERROR: Error user already exists!
+2018-7-30 22:17:33 : INFO: Server started on port: 3000
+2018-7-30 22:17:33 : ERROR: Error user already exists!
+2018-7-30 22:17:46 : INFO: Server started on port: 3000
+2018-7-30 22:17:46 : ERROR: Error user already exists!
+2018-7-30 22:17:49 : INFO: Server started on port: 3000
+2018-7-30 22:17:50 : ERROR: Error user already exists!
+2018-7-30 22:17:55 : INFO: Server started on port: 3000
+2018-7-30 22:17:55 : ERROR: Error user already exists!
+2018-7-30 22:17:58 : INFO: Server started on port: 3000
+2018-7-30 22:17:58 : ERROR: Error user already exists!
+2018-7-30 22:18:02 : INFO: Server started on port: 3000
+2018-7-30 22:18:02 : ERROR: Error user already exists!
+2018-7-30 22:18:05 : INFO: Server started on port: 3000
+2018-7-30 22:18:05 : ERROR: Error user already exists!
+2018-7-30 22:18:10 : INFO: Server started on port: 3000
+2018-7-30 22:18:10 : ERROR: Error user already exists!
+2018-7-30 22:18:19 : INFO: Server started on port: 3000
+2018-7-30 22:18:19 : ERROR: Error user already exists!
+2018-7-30 22:18:21 : INFO: Server started on port: 3000
+2018-7-30 22:18:21 : ERROR: Error user already exists!
+2018-7-30 22:18:51 : INFO: Server started on port: 3000
+2018-7-30 22:18:51 : ERROR: Error user already exists!
+2018-7-30 22:19:13 : INFO: Server started on port: 3000
+2018-7-30 22:19:13 : ERROR: Error user already exists!
+2018-7-30 22:19:32 : INFO: Server started on port: 3000
+2018-7-30 22:19:32 : ERROR: Error user already exists!
+2018-7-30 22:20:41 : INFO: Server started on port: 3000
+2018-7-30 22:20:41 : INFO: Added new user
+2018-7-30 22:20:43 : INFO: Server started on port: 3000
+2018-7-30 22:20:43 : ERROR: Error user already exists!
+2018-7-30 22:21:39 : INFO: Server started on port: 3000
+2018-7-30 22:21:39 : INFO: Added new user
+2018-7-30 22:24:53 : INFO: Server started on port: 3000
+2018-7-30 22:24:53 : INFO: Added new user
+2018-7-30 22:25:22 : INFO: Server started on port: 3000
+2018-7-30 22:25:22 : INFO: Added new user
+2018-8-1 16:26:18 : INFO: Server started on port: 3000
+2018-8-1 16:26:18 : ERROR: Error user already exists!
+2018-8-1 16:50:32 : ERROR: BAD REQUEST: /
+2018-8-1 16:50:32 : ERROR: BAD REQUEST: /favicon.ico
+2018-8-1 16:50:32 : ERROR: BAD REQUEST: /favicon.ico
+2018-8-1 16:51:01 : ERROR: BAD REQUEST: /?id=490340
+2018-8-1 16:51:08 : ERROR: BAD REQUEST: /?id=4o90340
+2018-8-1 16:51:12 : ERROR: BAD REQUEST: /?id=4090340
+2018-8-1 16:51:25 : ERROR: Error reading file: ENOENT: no such file or directory, open 'C:\Users\Admin\Documents\Projects\node_inventory_server\db\490340.csv'
+2018-8-1 16:51:25 : INFO: USER: REQUESTED: 490340 and it exists
+2018-8-1 16:51:41 : ERROR: Error reading file: ENOENT: no such file or directory, open 'C:\Users\Admin\Documents\Projects\node_inventory_server\db\4090340.csv'
+2018-8-1 16:51:41 : INFO: USER: REQUESTED: 4090340 and it exists
+2018-8-1 16:51:47 : ERROR: Error reading file: ENOENT: no such file or directory, open 'C:\Users\Admin\Documents\Projects\node_inventory_server\db\4090340.csv'
+2018-8-1 16:51:47 : INFO: USER: REQUESTED: 4090340 and it exists
+2018-8-1 18:36:55 : INFO: Server started on port: 3000
+2018-8-1 18:36:55 : ERROR: Error user already exists!
+2018-8-1 18:43:06 : INFO: Server started on port: 3000
+2018-8-1 18:43:06 : ERROR: Error user already exists!
+2018-8-1 19:32:59 : INFO: Server started on port: 3000
+2018-8-1 19:32:59 : ERROR: Error user already exists!
+2018-8-1 19:34:02 : INFO: Server started on port: 3000
+2018-8-1 19:34:25 : INFO: Server started on port: 3000
+2018-8-1 19:35:20 : INFO: Server started on port: 3000
+2018-8-1 19:36:02 : INFO: Server started on port: 3000
+2018-8-1 19:36:03 : DEBUG: null
+2018-8-1 19:45:53 : INFO: Server started on port: 3000
+2018-8-1 19:46:17 : INFO: Server started on port: 3000
+2018-8-1 19:46:19 : WARNING: Error reading item: Item does not exist
+2018-8-1 19:46:58 : INFO: Server started on port: 3000
+2018-8-1 19:47:04 : INFO: Server started on port: 3000
+2018-8-1 19:47:11 : WARNING: Error reading item: Item does not exist
+2018-8-1 19:47:47 : INFO: Server started on port: 3000
+2018-8-1 19:47:49 : INFO: Server started on port: 3000
+2018-8-1 19:48:05 : INFO: Server started on port: 3000
+2018-8-1 19:48:08 : INFO: Server started on port: 3000
+2018-8-1 19:48:26 : INFO: Server started on port: 3000
+2018-8-1 19:48:28 : INFO: Server started on port: 3000
+2018-8-1 19:48:42 : INFO: Server started on port: 3000
+2018-8-1 19:48:57 : INFO: Server started on port: 3000
+2018-8-1 19:49:11 : INFO: Server started on port: 3000
+2018-8-1 19:49:25 : WARNING: Item does not exist
+2018-8-1 19:49:29 : WARNING: Item does not exist
+2018-8-1 19:50:42 : INFO: Server started on port: 3000
+2018-8-1 19:50:45 : WARNING: Item does not exist
+2018-8-1 19:51:05 : INFO: Server started on port: 3000
+2018-8-1 19:51:06 : WARNING: Item does not exist
+2018-8-1 19:51:21 : INFO: Server started on port: 3000
+2018-8-1 19:51:22 : WARNING: Item does not exist
+2018-8-1 19:51:37 : INFO: Server started on port: 3000
+2018-8-1 19:51:37 : WARNING: Item does not exist
+2018-8-1 19:52:26 : INFO: Server started on port: 3000
+2018-8-1 19:52:33 : WARNING: Item does not exist
+2018-8-1 19:52:42 : INFO: Server started on port: 3000
+2018-8-1 19:52:42 : WARNING: Item does not exist
+2018-8-1 19:56:24 : INFO: Server started on port: 3000
+2018-8-1 19:56:47 : INFO: Server started on port: 3000
+2018-8-1 19:56:48 : WARNING: Item does not exist
+2018-8-1 19:56:56 : INFO: Server started on port: 3000
+2018-8-1 19:56:57 : WARNING: Item does not exist
+2018-8-1 19:57:21 : INFO: Server started on port: 3000
+2018-8-1 19:58:21 : INFO: Server started on port: 3000
+2018-8-1 19:58:41 : INFO: Server started on port: 3000
+2018-8-1 19:59:10 : INFO: Server started on port: 3000
+2018-8-1 19:59:29 : INFO: Server started on port: 3000
+2018-8-1 20:00:58 : INFO: Server started on port: 3000
+2018-8-1 20:01:00 : INFO: Server started on port: 3000
+2018-8-1 20:01:20 : INFO: Server started on port: 3000
+2018-8-1 20:01:23 : INFO: Server started on port: 3000
+2018-8-1 20:02:06 : INFO: Server started on port: 3000
+2018-8-1 20:02:26 : INFO: Server started on port: 3000
+2018-8-1 20:02:29 : INFO: Server started on port: 3000
+2018-8-1 20:03:34 : INFO: Server started on port: 3000
+2018-8-1 20:03:44 : INFO: Server started on port: 3000
+2018-8-1 20:04:04 : INFO: Server started on port: 3000
+2018-8-1 20:04:35 : INFO: Server started on port: 3000
+2018-8-1 20:04:38 : DEBUG: [object Object]
+2018-8-1 20:04:51 : INFO: Server started on port: 3000
+2018-8-1 20:05:55 : INFO: Server started on port: 3000
+2018-8-1 20:06:31 : DEBUG: [object Object]
+2018-8-1 20:06:33 : ERROR: BAD REQUEST: /favicon.ico
+2018-8-1 20:07:05 : INFO: Server started on port: 3000
+2018-8-1 20:07:11 : ERROR: BAD REQUEST: /favicon.ico
+2018-8-1 20:07:15 : ERROR: BAD REQUEST: /favicon.ico
+2018-8-1 20:07:57 : INFO: Server started on port: 3000
+2018-8-1 20:08:23 : INFO: Server started on port: 3000
+2018-8-1 20:08:30 : ERROR: BAD REQUEST: /favicon.ico
+2018-8-1 20:10:18 : INFO: Server started on port: 3000
+2018-8-1 20:10:31 : ERROR: BAD REQUEST: /favicon.ico
+2018-8-1 20:13:01 : INFO: Server started on port: 3000
+2018-8-1 20:13:06 : INFO: Server started on port: 3000
+2018-8-1 20:27:56 : INFO: Server started on port: 3000
+2018-8-1 20:31:15 : INFO: Server started on port: 3000
+2018-8-1 20:52:13 : INFO: Server started on port: 3000
+2018-8-1 20:52:45 : INFO: Server started on port: 3000
+2018-8-1 20:56:48 : INFO: Server started on port: 3000
+2018-8-1 20:56:59 : INFO: Server started on port: 3000
+2018-8-1 20:59:23 : INFO: Server started on port: 3000
+2018-8-1 21:01:16 : INFO: Server started on port: 3000
+2018-8-1 21:04:21 : INFO: Server started on port: 3000
+2018-8-1 21:04:42 : INFO: Server started on port: 3000
+2018-8-1 21:06:09 : INFO: Server started on port: 3000
+2018-8-1 21:08:25 : INFO: Server started on port: 3000
+2018-8-1 21:08:27 : INFO: Server started on port: 3000
+2018-8-1 21:10:00 : INFO: Server started on port: 3000
+2018-8-1 21:11:19 : INFO: Server started on port: 3000
+2018-8-1 21:13:13 : INFO: Server started on port: 3000
+2018-8-1 21:13:21 : DEBUG: [object Object]
+2018-8-1 21:13:21 : ERROR: User does not exist
+2018-8-1 21:14:49 : INFO: Server started on port: 3000
+2018-8-1 21:14:59 : DEBUG: [object Object]
+2018-8-1 21:15:44 : INFO: Server started on port: 3000
+2018-8-1 21:16:08 : DEBUG: [object Object]
+2018-8-1 21:16:37 : INFO: Server started on port: 3000
+2018-8-1 21:19:00 : INFO: Server started on port: 3000
+2018-8-1 21:19:07 : DEBUG: [object Object]
+2018-8-1 21:19:23 : INFO: Server started on port: 3000
+2018-8-1 21:19:29 : DEBUG: [object Object]
+2018-8-1 21:19:43 : INFO: Server started on port: 3000
+2018-8-1 21:20:14 : INFO: Server started on port: 3000
+2018-8-1 21:20:19 : DEBUG: [object Object]
+2018-8-1 21:21:54 : INFO: Server started on port: 3000
+2018-8-1 21:22:01 : DEBUG: [object Object]
+2018-8-1 21:22:17 : INFO: Server started on port: 3000
+2018-8-1 21:22:25 : DEBUG: [object Object]
+2018-8-1 21:22:46 : INFO: Server started on port: 3000
+2018-8-1 21:22:53 : DEBUG: [object Object]
+2018-8-1 21:23:18 : INFO: Server started on port: 3000
+2018-8-1 21:23:18 : DEBUG: [object Object]
+2018-8-1 21:23:33 : INFO: Server started on port: 3000
+2018-8-1 21:23:51 : DEBUG: [object Object]
+2018-8-1 21:24:11 : INFO: Server started on port: 3000
+2018-8-1 21:24:11 : DEBUG: [object Object]
+2018-8-1 21:24:25 : INFO: Server started on port: 3000
+2018-8-1 21:25:09 : INFO: Server started on port: 3000
+2018-8-1 21:26:16 : INFO: Server started on port: 3000
+2018-8-1 21:26:37 : DEBUG: [object Object]
+2018-8-1 21:26:53 : INFO: Server started on port: 3000
+2018-8-1 21:26:59 : INFO: Server started on port: 3000
+2018-8-1 21:27:08 : INFO: Server started on port: 3000
+2018-8-1 21:27:15 : INFO: Server started on port: 3000
+2018-8-1 21:28:12 : INFO: Server started on port: 3000
+2018-8-1 21:28:13 : INFO: Server started on port: 3000
+2018-8-1 21:28:22 : DEBUG: [object Object]
+2018-8-1 21:28:29 : DEBUG: [object Object]
+2018-8-1 21:28:31 : DEBUG: [object Object]
+2018-8-1 21:29:15 : INFO: Server started on port: 3000
+2018-8-1 21:29:26 : INFO: Server started on port: 3000
+2018-8-1 21:29:31 : DEBUG: [object Object]
+2018-8-1 21:29:40 : DEBUG: [object Object]
+2018-8-1 21:29:43 : DEBUG: [object Object]
+2018-8-1 21:34:03 : INFO: Server started on port: 3000
+2018-8-1 21:34:09 : DEBUG: [object Object]
+2018-8-1 21:34:09 : WARNING: Item does not exist
+2018-8-1 21:36:10 : INFO: Server started on port: 3000
+2018-8-1 21:36:11 : WARNING: Item does not exist
+2018-8-1 21:36:20 : WARNING: Item does not exist
+2018-8-1 21:36:28 : INFO: Server started on port: 3000
+2018-8-1 21:36:29 : WARNING: Item does not exist
+2018-8-1 21:36:45 : INFO: Server started on port: 3000
+2018-8-1 21:36:46 : ERROR: Query was malformed
+2018-8-1 21:37:25 : INFO: Server started on port: 3000
+2018-8-1 21:37:31 : INFO: Server started on port: 3000
+2018-8-1 21:37:42 : INFO: Server started on port: 3000
+2018-8-1 21:38:31 : ERROR: Query was malformed
+2018-8-1 21:38:31 : ERROR: BAD REQUEST: /read
+2018-8-1 21:38:42 : INFO: Server started on port: 3000
+2018-8-1 21:38:46 : INFO: Server started on port: 3000
+2018-8-1 21:38:53 : INFO: Server started on port: 3000
+2018-8-1 21:38:57 : INFO: Server started on port: 3000
+2018-8-1 21:39:03 : INFO: Server started on port: 3000
+2018-8-1 21:39:06 : ERROR: Query was malformed
+2018-8-1 21:39:16 : DEBUG: [object Object]
+2018-8-1 21:39:16 : ERROR: Query was malformed
+2018-8-1 21:39:37 : INFO: Server started on port: 3000
+2018-8-1 21:39:56 : INFO: Server started on port: 3000
+2018-8-1 21:40:16 : INFO: Server started on port: 3000
+2018-8-1 21:42:40 : INFO: Server started on port: 3000
+2018-8-1 21:42:44 : INFO: Server started on port: 3000
+2018-8-1 21:43:09 : INFO: Server started on port: 3000
+2018-8-1 21:43:31 : INFO: Server started on port: 3000
+2018-8-1 21:43:33 : DEBUG: [object Object]
+2018-8-2 20:30:04 : INFO: Server started on port: 3000
+2018-8-2 20:45:24 : INFO: Server started on port: 3000
+2018-8-2 20:45:32 : DEBUG: [object Object]
+2018-8-2 20:46:59 : INFO: Server started on port: 3000
+2018-8-2 20:47:01 : INFO: Server started on port: 3000
+2018-8-2 20:47:04 : INFO: Server started on port: 3000
+2018-8-2 20:47:11 : INFO: Server started on port: 3000
+2018-8-2 20:47:12 : INFO: Server started on port: 3000
+2018-8-2 20:47:14 : INFO: Server started on port: 3000
+2018-8-2 20:47:28 : DEBUG: [object Object]
+2018-8-2 20:47:43 : INFO: Server started on port: 3000
+2018-8-2 20:49:15 : INFO: Server started on port: 3000
+2018-8-2 20:50:37 : INFO: Server started on port: 3000
+2018-8-2 20:51:06 : INFO: Server started on port: 3000
+2018-8-2 20:51:10 : INFO: Server started on port: 3000
+2018-8-2 20:51:32 : INFO: Server started on port: 3000
+2018-8-2 20:51:57 : INFO: Server started on port: 3000
+2018-8-2 20:54:13 : INFO: Server started on port: 3000
+2018-8-2 20:54:27 : INFO: Server started on port: 3000
+2018-8-2 20:54:42 : INFO: Server started on port: 3000
+2018-8-2 20:55:21 : INFO: Server started on port: 3000
+2018-8-2 20:55:32 : INFO: Server started on port: 3000
+2018-8-2 20:55:36 : INFO: Server started on port: 3000
+2018-8-2 20:55:53 : INFO: Server started on port: 3000
+2018-8-2 20:55:58 : INFO: Server started on port: 3000
+2018-8-2 20:56:01 : INFO: Server started on port: 3000
+2018-8-2 20:56:03 : INFO: Server started on port: 3000
+2018-8-2 20:58:20 : INFO: Server started on port: 3000
+2018-8-2 20:58:21 : INFO: Server started on port: 3000
+2018-8-2 20:58:49 : INFO: Server started on port: 3000
+2018-8-2 20:58:53 : INFO: Server started on port: 3000
+2018-8-2 20:59:22 : INFO: Server started on port: 3000
+2018-8-2 20:59:55 : INFO: Server started on port: 3000
+2018-8-2 21:00:36 : INFO: Server started on port: 3000
+2018-8-2 21:00:56 : INFO: Server started on port: 3000
+2018-8-2 21:01:01 : INFO: Server started on port: 3000
+2018-8-2 21:01:29 : INFO: Server started on port: 3000
+2018-8-2 21:01:56 : INFO: Server started on port: 3000
+2018-8-2 21:02:49 : ERROR: BAD REQUEST: /settings
+2018-8-2 21:03:23 : INFO: Server started on port: 3000
+2018-8-2 21:03:24 : ERROR: BAD REQUEST: /settings
+2018-8-2 21:09:01 : INFO: Server started on port: 3000
+2018-8-2 21:09:11 : INFO: Server started on port: 3000
+2018-8-2 21:09:17 : ERROR: BAD REQUEST: /settings
+2018-8-2 21:10:01 : INFO: Server started on port: 3000
+2018-8-2 21:10:08 : ERROR: BAD REQUEST: /settings
+2018-8-2 21:11:05 : INFO: Server started on port: 3000
+2018-8-2 21:11:56 : INFO: Server started on port: 3000
+2018-8-2 21:15:06 : ERROR: Query was malformed
+2018-8-2 21:15:33 : INFO: Server started on port: 3000
+2018-8-2 21:16:28 : INFO: Server started on port: 3000
+2018-8-2 21:18:08 : ERROR: BAD REQUEST: /settings
+2018-8-2 21:18:36 : INFO: Server started on port: 3000
+2018-8-2 21:19:39 : INFO: Server started on port: 3000
+2018-8-2 21:19:48 : INFO: Server started on port: 3000
+2018-8-2 21:19:52 : ERROR: BAD REQUEST: /settings
+2018-8-2 21:20:57 : INFO: Server started on port: 3000
+2018-8-2 21:21:12 : ERROR: BAD REQUEST: /settings
+2018-8-2 21:21:20 : ERROR: BAD REQUEST: /
+2018-8-2 21:21:22 : ERROR: BAD REQUEST: /
+2018-8-2 21:21:58 : INFO: Server started on port: 3000
+2018-8-2 21:22:11 : INFO: Server started on port: 3000
+2018-8-2 21:23:36 : INFO: Server started on port: 3000
+2018-8-2 21:24:10 : INFO: Server started on port: 3000
+2018-8-2 21:24:14 : ERROR: BAD REQUEST: /settings
+2018-8-2 21:25:12 : INFO: Server started on port: 3000
+2018-8-2 21:25:31 : INFO: Server started on port: 3000
+2018-8-2 21:25:59 : INFO: Server started on port: 3000
+2018-8-2 21:26:03 : ERROR: BAD REQUEST: /settings
+2018-8-2 21:26:37 : INFO: Server started on port: 3000
+2018-8-2 21:27:06 : INFO: Server started on port: 3000
+2018-8-2 21:27:09 : INFO: Server started on port: 3000
+2018-8-2 21:27:59 : ERROR: BAD REQUEST: /inventory
+2018-8-2 21:28:41 : INFO: Server started on port: 3000
+2018-8-2 21:34:37 : ERROR: 404: /inventory IP: ::1
+2018-8-2 21:35:18 : INFO: Server started on port: 3000
+2018-8-2 21:35:26 : INFO: Server started on port: 3000
+2018-8-2 21:35:37 : INFO: Server started on port: 3000
+2018-8-2 21:35:44 : INFO: Server started on port: 3000
+2018-8-2 21:35:51 : INFO: Server started on port: 3000
+2018-8-2 21:35:57 : INFO: Server started on port: 3000
+2018-8-2 21:36:06 : INFO: Server started on port: 3000
+2018-8-2 21:36:20 : INFO: Server started on port: 3000
+2018-8-2 21:36:28 : INFO: Server started on port: 3000
+2018-8-2 21:36:34 : INFO: Server started on port: 3000
+2018-8-2 21:36:39 : INFO: Server started on port: 3000
+2018-8-2 21:37:19 : INFO: Server started on port: 3000
+2018-8-2 21:37:27 : ERROR: 400: /asfd IP: ::1
+2018-8-2 21:37:43 : INFO: Server started on port: 3000
+2018-8-2 21:37:53 : INFO: Server started on port: 3000
+2018-8-2 21:38:13 : INFO: Server started on port: 3000
+2018-8-2 21:38:38 : INFO: Server started on port: 3000
+2018-8-2 21:38:40 : INFO: Server started on port: 3000
+2018-8-2 21:38:48 : ERROR: Bad request: /read?id= IP: ::1
+2018-8-2 21:38:55 : ERROR: Bad request: /read?id=4090340 IP: ::1
+2018-8-2 21:38:58 : ERROR: Bad request: /read?id=4090340 IP: ::1
+2018-8-2 21:39:08 : INFO: Server started on port: 3000
+2018-8-2 21:39:09 : ERROR: Bad request: /read?id=4090340 IP: ::1
+2018-8-2 21:39:23 : ERROR: Bad request: /read?id=4090340 IP: ::1
+2018-8-2 21:39:45 : INFO: Server started on port: 3000
+2018-8-2 21:39:55 : INFO: Server started on port: 3000
+2018-8-2 21:39:57 : WARNING: Item does not exist
+2018-8-2 21:40:31 : INFO: Server started on port: 3000
+2018-8-2 21:40:59 : INFO: Server started on port: 3000
+2018-8-2 21:41:06 : INFO: Server started on port: 3000
+2018-8-2 21:41:38 : INFO: Server started on port: 3000
+2018-8-2 21:42:26 : WARNING: Item does not exist
+2018-8-2 21:42:43 : INFO: Server started on port: 3000
+2018-8-2 21:43:03 : INFO: Server started on port: 3000
+2018-8-2 21:43:11 : INFO: Server started on port: 3000
+2018-8-2 21:43:17 : WARNING: Item does not exist

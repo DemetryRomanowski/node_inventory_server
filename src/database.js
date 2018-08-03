@@ -50,13 +50,39 @@ module.exports = {
     },
 
     /**
+     * Get a user from the database
+     *
+     * @param user_name The username to find
+     * @param onUser The callback when a user is found
+     * @param onError The callback when there is an error
+     */
+    get_user : function(user_name, onUser = () => {}, onError = () => {})
+    {
+        db.serialize(() => {
+            db.get("SELECT * FROM Users WHERE FirstName = (?) LIMIT 1", user_name, (err, row) => {
+
+                if(err) {
+                    Debug.log(ErrorLevel.ERR, err.message);
+                    onError(err);
+                } else {
+                    if(row) {
+                        onUser(row);
+                    } else {
+                        onError(new Error("User does not exist"));
+                    }
+                }
+            });
+        });
+    },
+
+    /**
      * Edit a user in the data base, checks if user exists
      *
      * @param user_id The user ID to edit
      * @param user_data The data to change to
      * @param onError The callback if there was an error
      */
-    edit_user : function(user_id, user_data, onError)
+    edit_user : function(user_id, user_data, onError = () => {})
     {
         db.serialize(() => {
             db.get("SELECT * FROM Users WHERE UserID = (?) LIMIT 1", [user_id], (err, row) => {
@@ -108,7 +134,7 @@ module.exports = {
      * @param onItemExists The callback if the item exists
      * @param onError The callback if the item exists
      */
-    add_item : function(item_data, onItemExists, onError)
+    add_item : function(item_data, onItemExists = () => {}, onError = () => {})
     {
         db.serialize(() => {
             db.get("SELECT * FROM Inventory WHERE ItemID = (?) OR UPC = (?) OR PartNumber = (?) OR ManufactererUPC = (?)", [item_data.item_id, item_data.upc, item_data.part_number, item_data.manufacterer_upc], (err, row) => {
@@ -131,6 +157,33 @@ module.exports = {
                         }
                     });
                 }
+            });
+        });
+    },
+
+    /**
+     * Get the item from the database
+     *
+     * @param item_id The id of the item to get
+     * @param onComplete The callback if its complete
+     * @param onError The callback if there was an error
+     */
+    get_item : function(item_id, onComplete = () => {}, onError = () => {})
+    {
+        db.serialize(() => {
+            db.get("SELECT * FROM Inventory WHERE ItemID = (?)", [item_id], (row, err) => {
+                if(err) {
+                    Debug.log(ErrorLevel.ERR, err.message);
+                    onError(err);
+                    return;
+                }
+                if(row)
+                    if(row.length > 1)
+                        onError(new Error("What the fuck how did this happen?"));
+                    else
+                        onComplete(row);
+                else
+                    onError(new Error("Item does not exist"));
             });
         });
     },

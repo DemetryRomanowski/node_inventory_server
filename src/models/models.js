@@ -14,8 +14,8 @@ module.exports = {
 
         sanitize_phone_number : function()
         {
-            if(this.phone_number.contains(' ') || this.phone_number.contains('-'))
-                this.phone_number = this.phone_number.replace('-', '').replace(' ', '');
+            // if(this.phone_number.contains(' ') || this.phone_number.contains('-'))
+            this.phone_number = this.phone_number.replace('-', '').replace(' ', '');
         },
     },
 
@@ -23,6 +23,13 @@ module.exports = {
      * The inventory object model
      */
     Inventory : {
-
+        item_id : 0,
+        upc : "",
+        part_number : "",
+        manufacterer_upc : "",
+        description : "",
+        min : 0,
+        max : 0,
+        qty : 0
     }
 };

@@ -1,0 +1,28 @@
+extends template
+
+block head
+
+block body
+    div#login.container
+        div: form(method='post', class='form-vertical')
+            fieldset
+                legend: strong.text-info Login page
+
+                if message
+                    if message.error
+                        div.alert.alert-danger Incorrect username or password
+
+                    else
+                        if message.success
+                            div.alert.alert-success You are now connected
+
+                div.form-group
+                    label Username:
+                    input.form-control(name='username', value='', autofocus)
+
+                div.form-group
+                    label Password:
+                    input.form-control(name='password', type='password')
+
+                div.form-actions
+                    input.btn.btn-primary(type='submit', value='Login')
