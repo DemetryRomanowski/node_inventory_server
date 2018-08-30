@@ -171,7 +171,7 @@ module.exports = {
     get_item : function(item_id, onComplete = () => {}, onError = () => {})
     {
         db.serialize(() => {
-            db.get("SELECT * FROM Inventory WHERE ItemID = (?)", [item_id], (row, err) => {
+            db.get("SELECT * FROM Inventory WHERE ItemID = (?)", [item_id], (err, row) => {
                 if(err) {
                     Debug.log(ErrorLevel.ERR, err.message);
                     onError(err);
@@ -184,6 +184,30 @@ module.exports = {
                         onComplete(row);
                 else
                     onError(new Error("Item does not exist"));
+            });
+        });
+    },
+
+    /**
+     * Get the entire inventory
+     *
+     * @param onComplete The callback if its complete
+     * @param onError The callback if there was an error
+     */
+    get_inventory : function(onComplete = () => {}, onError = () => {})
+    {
+        db.serialize(() => {
+            db.all("SELECT * FROM Inventory", (err, rows) => {
+                if(err)
+                {
+                    Debug.log(ErrorLevel.ERR, err.message);
+                    onError(err);
+                    return;
+                }
+                if(rows)
+                    onComplete(rows);
+                else
+                    onError(new Error("Inventory empty or Database incorrectly set up"));
             });
         });
     },

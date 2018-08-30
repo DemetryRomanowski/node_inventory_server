@@ -2,4 +2,6 @@ extends template
 
 block head
 block body
-    p #{item_data.Name}
+    if !{item_data}
+        for item in !{item_data}
+            p #{item}

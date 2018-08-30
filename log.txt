@@ -1346,3 +1346,172 @@
 2018-8-2 21:54:27 : ERROR: User does not exist
 2018-8-2 21:54:53 : INFO: Server started on port: 3000
 2018-8-2 21:55:00 : INFO: Server started on port: 3000
+2018-8-2 21:56:11 : INFO: Server started on port: 3000
+2018-8-2 21:56:25 : ERROR: 404: /inventory IP: ::1
+2018-8-2 21:56:54 : INFO: Server started on port: 3000
+2018-8-2 21:57:17 : INFO: Server started on port: 3000
+2018-8-2 21:57:59 : INFO: Server started on port: 3000
+2018-8-2 21:58:13 : INFO: Server started on port: 3000
+2018-8-2 21:58:17 : INFO: Server started on port: 3000
+2018-8-2 21:58:21 : INFO: Server started on port: 3000
+2018-8-2 21:59:01 : INFO: Server started on port: 3000
+2018-8-2 21:59:11 : ERROR: 404: /inventory IP: ::1
+2018-8-2 21:59:41 : INFO: Server started on port: 3000
+2018-8-2 22:00:15 : INFO: Server started on port: 3000
+2018-8-2 22:00:21 : INFO: Server started on port: 3000
+2018-8-2 22:00:33 : INFO: Server started on port: 3000
+2018-8-2 22:00:50 : INFO: Server started on port: 3000
+2018-8-2 22:01:07 : INFO: Server started on port: 3000
+2018-8-2 22:04:08 : INFO: Server started on port: 3000
+2018-8-2 22:04:20 : INFO: Server started on port: 3000
+2018-8-2 22:04:35 : INFO: Server started on port: 3000
+2018-8-2 22:05:13 : INFO: Server started on port: 3000
+2018-8-2 22:05:22 : INFO: Server started on port: 3000
+2018-8-2 22:05:57 : INFO: Server started on port: 3000
+2018-8-2 22:06:04 : INFO: Server started on port: 3000
+2018-8-2 22:07:10 : INFO: Server started on port: 3000
+2018-8-2 22:07:12 : INFO: Server started on port: 3000
+2018-8-2 22:08:08 : INFO: Server started on port: 3000
+2018-8-2 22:08:17 : INFO: Server started on port: 3000
+2018-8-2 22:08:52 : INFO: Server started on port: 3000
+2018-8-2 22:08:58 : INFO: Server started on port: 3000
+2018-8-2 22:09:06 : INFO: Server started on port: 3000
+2018-8-2 22:09:31 : INFO: Server started on port: 3000
+2018-8-2 22:09:34 : INFO: Server started on port: 3000
+2018-8-2 22:09:37 : INFO: Server started on port: 3000
+2018-8-2 22:10:40 : INFO: Server started on port: 3000
+2018-8-2 22:11:04 : INFO: Server started on port: 3000
+2018-8-2 22:11:08 : INFO: Server started on port: 3000
+2018-8-2 22:11:25 : INFO: Server started on port: 3000
+2018-8-2 22:11:47 : INFO: Server started on port: 3000
+2018-8-2 22:11:52 : INFO: Server started on port: 3000
+2018-8-2 22:12:23 : ERROR: 404: /reports IP: ::1
+2018-8-2 22:14:16 : INFO: Server started on port: 3000
+2018-8-3 16:54:33 : INFO: Server started on port: 3000
+2018-8-3 18:10:16 : ERROR: 404: /favicon.ico IP: ::1
+2018-8-3 18:10:23 : ERROR: 404: /favicon.ico IP: ::1
+2018-8-3 18:12:11 : INFO: Server started on port: 3000
+2018-8-3 18:14:05 : INFO: Server started on port: 3000
+2018-8-3 18:14:22 : INFO: Server started on port: 3000
+2018-8-3 18:14:28 : INFO: Server started on port: 3000
+2018-8-3 18:14:35 : INFO: Server started on port: 3000
+2018-8-3 18:15:19 : INFO: Server started on port: 3000
+2018-8-29 18:06:21 : INFO: Server started on port: 3000
+2018-8-29 18:06:38 : ERROR: 404: /favicon.ico IP: ::1
+2018-8-29 18:06:38 : ERROR: 404: /favicon.ico IP: ::1
+2018-8-29 18:18:44 : ERROR: 404: /profile IP: ::1
+2018-8-29 18:18:50 : ERROR: 404: /cmms IP: ::1
+2018-8-29 18:23:18 : WARNING: Item does not exist
+2018-8-29 18:38:30 : INFO: Server started on port: 3000
+2018-8-29 18:41:41 : INFO: Server started on port: 3000
+2018-8-29 18:42:48 : INFO: Server started on port: 3000
+2018-8-29 18:42:49 : INFO: Server started on port: 3000
+2018-8-29 18:42:53 : INFO: Server started on port: 3000
+2018-8-29 18:43:36 : INFO: Server started on port: 3000
+2018-8-29 18:44:16 : INFO: Server started on port: 3000
+2018-8-29 18:44:28 : INFO: Server started on port: 3000
+2018-8-29 18:45:15 : INFO: Server started on port: 3000
+2018-8-29 18:45:48 : INFO: Server started on port: 3000
+2018-8-29 18:46:09 : INFO: Server started on port: 3000
+2018-8-29 19:56:55 : INFO: Server started on port: 3000
+2018-8-29 19:59:31 : INFO: Server started on port: 3000
+2018-8-29 20:01:00 : INFO: Server started on port: 3000
+2018-8-29 20:02:26 : INFO: Server started on port: 3000
+2018-8-29 20:02:42 : INFO: Server started on port: 3000
+2018-8-29 20:02:45 : INFO: Server started on port: 3000
+2018-8-29 20:04:17 : INFO: Server started on port: 3000
+2018-8-29 20:08:13 : INFO: Server started on port: 3000
+2018-8-29 20:09:58 : INFO: Server started on port: 3000
+2018-8-29 20:10:17 : INFO: Server started on port: 3000
+2018-8-29 20:11:04 : INFO: Server started on port: 3000
+2018-8-29 20:25:37 : INFO: Server started on port: 3000
+2018-8-29 20:26:51 : INFO: Server started on port: 3000
+2018-8-29 20:28:30 : INFO: Server started on port: 3000
+2018-8-29 20:29:03 : INFO: Server started on port: 3000
+2018-8-29 20:29:39 : INFO: Server started on port: 3000
+2018-8-29 20:29:40 : WARNING: Inventory empty or Database incorrectly set up
+2018-8-29 20:29:45 : WARNING: Inventory empty or Database incorrectly set up
+2018-8-29 20:32:01 : INFO: Server started on port: 3000
+2018-8-29 20:33:30 : INFO: Server started on port: 3000
+2018-8-29 20:33:31 : INFO: Server started on port: 3000
+2018-8-29 20:35:33 : INFO: Server started on port: 3000
+2018-8-29 20:36:11 : INFO: Server started on port: 3000
+2018-8-29 20:36:14 : INFO: Server started on port: 3000
+2018-8-29 20:37:52 : INFO: Server started on port: 3000
+2018-8-29 20:37:55 : INFO: Server started on port: 3000
+2018-8-29 20:38:03 : WARNING: What the hell?
+2018-8-29 20:38:25 : INFO: Server started on port: 3000
+2018-8-29 20:38:36 : INFO: Server started on port: 3000
+2018-8-29 20:41:00 : INFO: Server started on port: 3000
+2018-8-29 20:48:08 : INFO: Server started on port: 3000
+2018-8-29 20:53:47 : INFO: Server started on port: 3000
+2018-8-29 20:54:06 : INFO: Server started on port: 3000
+2018-8-29 20:54:14 : INFO: Server started on port: 3000
+2018-8-29 20:54:37 : INFO: Server started on port: 3000
+2018-8-29 20:54:39 : INFO: Server started on port: 3000
+2018-8-29 20:57:24 : INFO: Server started on port: 3000
+2018-8-29 20:58:54 : INFO: Server started on port: 3000
+2018-8-29 20:59:11 : INFO: Server started on port: 3000
+2018-8-29 20:59:14 : INFO: Server started on port: 3000
+2018-8-29 21:01:55 : INFO: Server started on port: 3000
+2018-8-29 21:02:05 : INFO: Server started on port: 3000
+2018-8-29 21:03:54 : INFO: Server started on port: 3000
+2018-8-29 21:04:00 : INFO: Server started on port: 3000
+2018-8-29 21:04:03 : INFO: Server started on port: 3000
+2018-8-29 21:04:30 : INFO: Server started on port: 3000
+2018-8-29 21:05:07 : INFO: Server started on port: 3000
+2018-8-29 21:05:27 : INFO: Server started on port: 3000
+2018-8-29 21:09:28 : INFO: Server started on port: 3000
+2018-8-29 21:09:43 : INFO: Server started on port: 3000
+2018-8-29 21:09:48 : ERROR: SQLITE_RANGE: column index out of range
+2018-8-29 21:09:48 : WARNING: SQLITE_RANGE: column index out of range
+2018-8-29 21:09:52 : ERROR: SQLITE_RANGE: column index out of range
+2018-8-29 21:09:52 : WARNING: SQLITE_RANGE: column index out of range
+2018-8-29 21:10:01 : INFO: Server started on port: 3000
+2018-8-29 21:11:39 : INFO: Server started on port: 3000
+2018-8-29 21:12:04 : INFO: Server started on port: 3000
+2018-8-29 21:12:19 : INFO: Server started on port: 3000
+2018-8-29 21:12:28 : INFO: Server started on port: 3000
+2018-8-29 21:13:42 : INFO: Server started on port: 3000
+2018-8-29 21:18:24 : INFO: Server started on port: 3000
+2018-8-29 21:18:39 : INFO: Server started on port: 3000
+2018-8-29 21:19:40 : INFO: Server started on port: 3000
+2018-8-29 21:20:10 : INFO: Server started on port: 3000
+2018-8-29 21:21:09 : INFO: Server started on port: 3000
+2018-8-29 21:21:43 : INFO: Server started on port: 3000
+2018-8-29 21:21:58 : INFO: Server started on port: 3000
+2018-8-29 21:22:05 : INFO: Server started on port: 3000
+2018-8-29 21:22:12 : INFO: Server started on port: 3000
+2018-8-29 21:23:57 : INFO: Server started on port: 3000
+2018-8-29 21:28:46 : INFO: Server started on port: 3000
+2018-8-29 21:30:04 : INFO: Server started on port: 3000
+2018-8-29 21:30:17 : INFO: Server started on port: 3000
+2018-8-29 21:30:20 : INFO: Server started on port: 3000
+2018-8-29 21:30:30 : INFO: Server started on port: 3000
+2018-8-29 21:31:44 : ERROR: 404: /reports IP: ::1
+2018-8-29 21:31:46 : ERROR: 404: /cmms IP: ::1
+2018-8-29 21:31:48 : ERROR: 404: /export IP: ::1
+2018-8-29 21:31:51 : ERROR: 404: /cmms IP: ::1
+2018-8-29 21:32:29 : INFO: Server started on port: 3000
+2018-8-29 21:32:43 : INFO: Server started on port: 3000
+2018-8-29 21:33:29 : INFO: Server started on port: 3000
+2018-8-29 21:33:56 : INFO: Server started on port: 3000
+2018-8-29 21:34:35 : INFO: Server started on port: 3000
+2018-8-29 21:34:37 : INFO: Server started on port: 3000
+2018-8-29 21:35:18 : INFO: Server started on port: 3000
+2018-8-29 21:35:41 : ERROR: 404: /reports IP: ::1
+2018-8-29 21:36:15 : INFO: Server started on port: 3000
+2018-8-29 21:36:26 : INFO: Server started on port: 3000
+2018-8-29 21:36:31 : ERROR: 404: /export IP: ::1
+2018-8-29 21:37:25 : INFO: Server started on port: 3000
+2018-8-29 21:37:27 : INFO: Server started on port: 3000
+2018-8-29 21:38:11 : INFO: Server started on port: 3000
+2018-8-29 21:38:13 : INFO: Server started on port: 3000
+2018-8-29 21:38:26 : INFO: Server started on port: 3000
+2018-8-29 21:38:28 : INFO: Server started on port: 3000
+2018-8-29 21:38:47 : INFO: Server started on port: 3000
+2018-8-29 21:38:49 : INFO: Server started on port: 3000
+2018-8-29 21:39:14 : INFO: Server started on port: 3000
+2018-8-29 21:39:22 : INFO: Server started on port: 3000
+2018-8-29 21:40:58 : INFO: Server started on port: 3000
+2018-8-29 21:41:02 : INFO: Server started on port: 3000

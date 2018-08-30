@@ -11,10 +11,11 @@
   "author": "Demetry Romanowski",
   "license": "MIT",
   "dependencies": {
+    "body-parser": "^1.18.3",
     "express": "^4.16.3",
     "nodemon": "^1.18.2",
+    "npm": "^6.4.1",
     "pug": "^2.0.3",
-    "sqlite3": "^4.0.2",
-    "body-parser": "^1.18.3"
+    "sqlite3": "^4.0.2"
   }
 }

@@ -29,6 +29,37 @@ app.use(bodyparser.urlencoded({extended: true}));
 //app.use('/', express.static(__dirname + '/public'));
 
 /**
+ * Check if a user is already logged in
+ *
+ * @param req The request data
+ * @param onUserLoggedIn The callback if a user is logged in
+ * @param onUserNotLoggedIn The callback if a user is not logged in
+ * @param onErr The callback if there is an error
+ */
+function check_logged_in(req, onUserLoggedIn, onUserNotLoggedIn, onErr)
+{
+    var logged_in = false;
+
+    users_logged_in.forEach((user) => {
+        //If the user is timed out
+        if(user.time < new Date(Date.now() - 60000)){
+            users_logged_in.splice(user, 1);
+            logged_in = false;
+            onUserNotLoggedIn();
+        } else {
+            //Check if the user is already logged in
+            if (user.token === req.ip) {
+                logged_in = true;
+                onUserLoggedIn(user);
+            }
+        }
+    });
+    //If the user is not logged in redirect back to the login page
+    if(logged_in !== true)
+        onUserNotLoggedIn();
+}
+
+/**
  * Read route
  */
 app.get('/read', (req, res) => {
@@ -44,26 +75,6 @@ app.get('/read', (req, res) => {
             res.render('errors/item_doesnt_exist');
         });
     }
-});
-
-app.get('/dashboard', (req, res) => {
-    var user_login = false;
-
-    users_logged_in.forEach((user) => {
-        //If the user is timed out
-        if(user.time < new Date(Date.now() - 60000)){
-            user_login = false;
-        } else {
-            //Check if the user is already logged in
-            if (user.token === req.ip) {
-                res.render('index');
-                user_login = true;
-            }
-        }
-    });
-    //If the user is not logged in redirect back to the login page
-    if(user_login !== true)
-        res.redirect('login');
 });
 
 /**
@@ -96,15 +107,94 @@ app.post('/login', (req, res) => {
     }
 });
 
+
+//#region Dashboard Routes
+
+/**
+ * Dashboard route
+ */
+app.get('/dashboard', (req, res) => {
+    db.get_inventory((rows) => {
+        var itms = [];
+        rows.forEach((row) => {
+            var t = InventoryModel;
+            
+            var item = {
+                item_id: row.ItemID,
+                upc: row.UPC,
+                part_number: row.PartNumber,
+                manufacterer_upc: row.ManufactererUPC,
+                manufacterer: row.Manufacterer,
+                description: row.Description,
+                min: row.Min,
+                max: row.Max,
+                qty: row.Qty
+            };
+            itms.push(item);
+        });
+
+        check_logged_in(req, (user) => {
+            res.render('index', {
+                user: user,
+                inventory: {
+                    items: itms,
+                    top_items: {}
+                }
+            });
+        }, () => {
+            res.redirect('/login');
+        });
+    }, (err) => {
+        res.render('errors/400', {err: err});
+    });
+});
+
+/**
+ * Settings route
+ */
+app.get('/settings', (req, res) => {
+    res.render('errors/coming_soon');
+});
+
+/**
+ * Inventory route
+ */
+app.get('/inventory', (req, res) => {
+    check_logged_in(req, (user) => {
+        res.render('dashboard_pages/inventory', {user: user});
+    }, () => {
+        res.redirect('/login');
+    });
+});
+
+/**
+ * Reports Route
+ */
+app.get('/reports', (req, res) => {
+    res.render('errors/coming_soon');
+});
+
+/**
+ * CMMS Route
+ */
+app.get('/cmms', (req, res) => {
+    res.render('errors/coming_soon');
+});
+
+/**
+ * Export Route
+ */
+app.get('/export', (req, res) => {
+    res.render('errors/coming_soon');
+});
+
+//#endregion
+
 /**
  * Default route
  */
 app.get('/', (req, res) => {
     res.redirect('/dashboard');
-});
-
-app.get('/settings', (req, res) => {
-    res.render('errors/coming_soon');
 });
 
 /**
@@ -113,7 +203,7 @@ app.get('/settings', (req, res) => {
 app.get('*', (req, res) => {
 	Debug.log(ErrorLevel.ERR, "404: " + req.url + " IP: " + req.ip);
 	res.render('errors/404');
-}); 
+});
 
 /**
  * Start the webserver
